@@ -1,0 +1,331 @@
+ID   QEXN01000145; SV 1; linear; genomic DNA; WGS; PRO; 245 BP.
+XX
+AC   QEXN01000145;
+XX
+PR   Project:PRJNA464239;
+XX
+DT   06-SEP-2019 (Rel. 142, Created)
+DT   06-SEP-2019 (Rel. 142, Last updated, Version 1)
+XX
+DE   Escherichia coli strain E-3 NODE_145_length_245_cov_145.11, whole genome
+DE   shotgun sequence.
+XX
+KW   WGS.
+XX
+OS   Escherichia coli
+OC   Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales;
+OC   Enterobacteriaceae; Escherichia.
+XX
+RN   [1]
+RP   1-245
+RA   Hossain M., Tabassum T., Khan N., Rahman A., Sadique A., Ishtiaque A.,
+RA   Ahsan G.U., Huq A., El-Sayed N.M., Alam M., Colwell R.;
+RT   "Whole genome sequencing of uropathogenic Escherichia coli isolated from
+RT   Bangladesh";
+RL   Unpublished.
+XX
+RN   [2]
+RP   1-245
+RA   Hossain M., Tabassum T., Khan N., Rahman A., Sadique A., Ishtiaque A.,
+RA   Ahsan G.U., Huq A., El-Sayed N.M., Alam M., Colwell R.;
+RT   ;
+RL   Submitted (07-MAY-2018) to the INSDC.
+RL   NSU Genome Research Institute (NGRI), North South University, Plot 15,
+RL   Block B, Baridhara, Basundhara, Dhaka 1229, Bangladesh
+XX
+DR   MD5; 6207040f1b40ff96bfa39330039e6435.
+DR   ENA; QEXN01000000; SET.
+DR   ENA; QEXN00000000; SET.
+DR   BioSample; SAMN09080050.
+XX
+CC   Bacteria and source DNA available from NGRI.
+CC   Annotation was added by the NCBI Prokaryotic Genome Annotation
+CC   Pipeline (released 2013). Information about the Pipeline can be
+CC   found here: https://www.ncbi.nlm.nih.gov/genome/annotation_prok/
+CC   ##Genome-Assembly-Data-START##
+CC   Assembly Method        :: SPAdes v. 3.11
+CC   Genome Representation  :: Full
+CC   Expected Final Version :: Yes
+CC   Genome Coverage        :: 10.0x
+CC   Sequencing Technology  :: Illumina MiSeq
+CC   ##Genome-Assembly-Data-END##
+CC   ##Genome-Annotation-Data-START##
+CC   Annotation Provider               :: NCBI
+CC   Annotation Date                   :: 05/07/2018 16:48:01
+CC   Annotation Pipeline               :: NCBI Prokaryotic Genome
+CC                                        Annotation Pipeline
+CC   Annotation Method                 :: Best-placed reference protein
+CC                                        set; GeneMarkS+
+CC   Annotation Software revision      :: 4.5
+CC   Features Annotated                :: Gene; CDS; rRNA; tRNA; ncRNA;
+CC                                        repeat_region
+CC   Genes (total)                     :: 5,418
+CC   CDS (total)                       :: 5,313
+CC   Genes (coding)                    :: 5,030
+CC   CDS (coding)                      :: 5,030
+CC   Genes (RNA)                       :: 105
+CC   rRNAs                             :: 8, 4, 1 (5S, 16S, 23S)
+CC   complete rRNAs                    :: 8, 1, 1 (5S, 16S, 23S)
+CC   partial rRNAs                     :: 3 (16S)
+CC   tRNAs                             :: 87
+CC   ncRNAs                            :: 5
+CC   Pseudo Genes (total)              :: 283
+CC   Pseudo Genes (ambiguous residues) :: 0 of 283
+CC   Pseudo Genes (frameshifted)       :: 111 of 283
+CC   Pseudo Genes (incomplete)         :: 114 of 283
+CC   Pseudo Genes (internal stop)      :: 87 of 283
+CC   Pseudo Genes (multiple problems)  :: 26 of 283
+CC   CRISPR Arrays                     :: 1
+CC   ##Genome-Annotation-Data-END##
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..245
+FT                   /organism="Escherichia coli"
+FT                   /host="Homo sapiens"
+FT                   /strain="E-3"
+FT                   /mol_type="genomic DNA"
+FT                   /country="Bangladesh:Dhaka"
+FT                   /lat_lon="23.81 N 90.41 E"
+FT                   /isolation_source="urine"
+FT                   /collected_by="NGRI"
+FT                   /collection_date="2017"
+FT                   /db_xref="taxon:562"
+FT   gene            complement(119..>245)
+FT                   /locus_tag="DF178_27085"
+FT   CDS             complement(119..>245)
+FT                   /codon_start=2
+FT                   /transl_table=11
+FT                   /locus_tag="DF178_27085"
+FT                   /product="IS66 family insertion sequence hypothetical
+FT                   protein"
+FT                   /note="Derived by automated computational analysis using
+FT                   gene prediction method: Protein Homology."
+FT                   /db_xref="UniProtKB/TrEMBL:A0A4S5F3T3"
+FT                   /inference="COORDINATES:similar to AA
+FT                   sequence:RefSeq:WP_006118364.1"
+FT                   /protein_id="THJ79895.1"
+FT                   /translation="RFVWPVTRDGKVHLTPAQLSMLLEGINWKHPKRTERAGIRI"
+XX
+SQ   Sequence 245 BP; 47 A; 61 C; 76 G; 61 T; 0 other;
+     gagcaggcgg ttgtattcag ccatctggcg tatggtgtcc tgttgcgtct gcaacagtgc        60
+     ccgcaggcgg gcgttctcat gagcaagtga ggtgtccata tcctcacttt acaacgggtt       120
+     atatgcggat tccagcgcgt tccgttcgtt tcgggtgctt ccagttgata ccttcaagaa       180
+     gcatggataa ctgagccgga gtaaggtgca ccttgccgtc acgggtgact ggccagacga       240
+     agcgg                                                                   245
+//
+ID   QEXN01000146; SV 1; linear; genomic DNA; WGS; PRO; 222 BP.
+XX
+AC   QEXN01000146;
+XX
+PR   Project:PRJNA464239;
+XX
+DT   06-SEP-2019 (Rel. 142, Created)
+DT   06-SEP-2019 (Rel. 142, Last updated, Version 1)
+XX
+DE   Escherichia coli strain E-3 NODE_146_length_222_cov_5.96842, whole genome
+DE   shotgun sequence.
+XX
+KW   WGS.
+XX
+OS   Escherichia coli
+OC   Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales;
+OC   Enterobacteriaceae; Escherichia.
+XX
+RN   [1]
+RP   1-222
+RA   Hossain M., Tabassum T., Khan N., Rahman A., Sadique A., Ishtiaque A.,
+RA   Ahsan G.U., Huq A., El-Sayed N.M., Alam M., Colwell R.;
+RT   "Whole genome sequencing of uropathogenic Escherichia coli isolated from
+RT   Bangladesh";
+RL   Unpublished.
+XX
+RN   [2]
+RP   1-222
+RA   Hossain M., Tabassum T., Khan N., Rahman A., Sadique A., Ishtiaque A.,
+RA   Ahsan G.U., Huq A., El-Sayed N.M., Alam M., Colwell R.;
+RT   ;
+RL   Submitted (07-MAY-2018) to the INSDC.
+RL   NSU Genome Research Institute (NGRI), North South University, Plot 15,
+RL   Block B, Baridhara, Basundhara, Dhaka 1229, Bangladesh
+XX
+DR   MD5; 4f9e459a1b39bc0d633487cff5758252.
+DR   ENA; QEXN01000000; SET.
+DR   ENA; QEXN00000000; SET.
+DR   BioSample; SAMN09080050.
+XX
+CC   Bacteria and source DNA available from NGRI.
+CC   Annotation was added by the NCBI Prokaryotic Genome Annotation
+CC   Pipeline (released 2013). Information about the Pipeline can be
+CC   found here: https://www.ncbi.nlm.nih.gov/genome/annotation_prok/
+CC   ##Genome-Assembly-Data-START##
+CC   Assembly Method        :: SPAdes v. 3.11
+CC   Genome Representation  :: Full
+CC   Expected Final Version :: Yes
+CC   Genome Coverage        :: 10.0x
+CC   Sequencing Technology  :: Illumina MiSeq
+CC   ##Genome-Assembly-Data-END##
+CC   ##Genome-Annotation-Data-START##
+CC   Annotation Provider               :: NCBI
+CC   Annotation Date                   :: 05/07/2018 16:48:01
+CC   Annotation Pipeline               :: NCBI Prokaryotic Genome
+CC                                        Annotation Pipeline
+CC   Annotation Method                 :: Best-placed reference protein
+CC                                        set; GeneMarkS+
+CC   Annotation Software revision      :: 4.5
+CC   Features Annotated                :: Gene; CDS; rRNA; tRNA; ncRNA;
+CC                                        repeat_region
+CC   Genes (total)                     :: 5,418
+CC   CDS (total)                       :: 5,313
+CC   Genes (coding)                    :: 5,030
+CC   CDS (coding)                      :: 5,030
+CC   Genes (RNA)                       :: 105
+CC   rRNAs                             :: 8, 4, 1 (5S, 16S, 23S)
+CC   complete rRNAs                    :: 8, 1, 1 (5S, 16S, 23S)
+CC   partial rRNAs                     :: 3 (16S)
+CC   tRNAs                             :: 87
+CC   ncRNAs                            :: 5
+CC   Pseudo Genes (total)              :: 283
+CC   Pseudo Genes (ambiguous residues) :: 0 of 283
+CC   Pseudo Genes (frameshifted)       :: 111 of 283
+CC   Pseudo Genes (incomplete)         :: 114 of 283
+CC   Pseudo Genes (internal stop)      :: 87 of 283
+CC   Pseudo Genes (multiple problems)  :: 26 of 283
+CC   CRISPR Arrays                     :: 1
+CC   ##Genome-Annotation-Data-END##
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..222
+FT                   /organism="Escherichia coli"
+FT                   /host="Homo sapiens"
+FT                   /strain="E-3"
+FT                   /mol_type="genomic DNA"
+FT                   /country="Bangladesh:Dhaka"
+FT                   /lat_lon="23.81 N 90.41 E"
+FT                   /isolation_source="urine"
+FT                   /collected_by="NGRI"
+FT                   /collection_date="2017"
+FT                   /db_xref="taxon:562"
+FT   gene            complement(<1..>222)
+FT                   /locus_tag="DF178_27090"
+FT   CDS             complement(<1..>222)
+FT                   /codon_start=3
+FT                   /transl_table=11
+FT                   /locus_tag="DF178_27090"
+FT                   /product="IS3 family transposase"
+FT                   /note="Derived by automated computational analysis using
+FT                   gene prediction method: Protein Homology."
+FT                   /db_xref="UniProtKB/TrEMBL:A0A4S5F3Q8"
+FT                   /inference="COORDINATES:similar to AA
+FT                   sequence:RefSeq:WP_076612086.1"
+FT                   /protein_id="THJ79857.1"
+FT                   /translation="ICSIAPKIGCTPETLRVWVRQHERDTGGGDGGLPTAERQRLKELG
+FT                   RENRELRRSNDILRQASAYFAKAEFDRL"
+XX
+SQ   Sequence 222 BP; 46 A; 69 C; 62 G; 45 T; 0 other;
+     agaggcggtc gaactccgcc ttcgcaaaat aagcggaagc ctggcgaagg atatcgttac        60
+     tgcggcgcag ttcacgattt tcacgtccca gctctttcag ccgctgccgt tcagcggtgg       120
+     ggagcccgcc atcaccgcct ccggtatccc gctcatgctg gcgtacccag acacgcagag       180
+     tctccggtgt acagccaatc tttggggcaa tggaacaaat tg                          222
+//
+ID   QEXN01000147; SV 1; linear; genomic DNA; WGS; PRO; 207 BP.
+XX
+AC   QEXN01000147;
+XX
+PR   Project:PRJNA464239;
+XX
+DT   06-SEP-2019 (Rel. 142, Created)
+DT   06-SEP-2019 (Rel. 142, Last updated, Version 1)
+XX
+DE   Escherichia coli strain E-3 NODE_147_length_207_cov_24.0625, whole genome
+DE   shotgun sequence.
+XX
+KW   WGS.
+XX
+OS   Escherichia coli
+OC   Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacterales;
+OC   Enterobacteriaceae; Escherichia.
+XX
+RN   [1]
+RP   1-207
+RA   Hossain M., Tabassum T., Khan N., Rahman A., Sadique A., Ishtiaque A.,
+RA   Ahsan G.U., Huq A., El-Sayed N.M., Alam M., Colwell R.;
+RT   "Whole genome sequencing of uropathogenic Escherichia coli isolated from
+RT   Bangladesh";
+RL   Unpublished.
+XX
+RN   [2]
+RP   1-207
+RA   Hossain M., Tabassum T., Khan N., Rahman A., Sadique A., Ishtiaque A.,
+RA   Ahsan G.U., Huq A., El-Sayed N.M., Alam M., Colwell R.;
+RT   ;
+RL   Submitted (07-MAY-2018) to the INSDC.
+RL   NSU Genome Research Institute (NGRI), North South University, Plot 15,
+RL   Block B, Baridhara, Basundhara, Dhaka 1229, Bangladesh
+XX
+DR   MD5; 5eb2ae529a5fd656afd468e6948d5510.
+DR   ENA; QEXN01000000; SET.
+DR   ENA; QEXN00000000; SET.
+DR   BioSample; SAMN09080050.
+XX
+CC   Bacteria and source DNA available from NGRI.
+CC   Annotation was added by the NCBI Prokaryotic Genome Annotation
+CC   Pipeline (released 2013). Information about the Pipeline can be
+CC   found here: https://www.ncbi.nlm.nih.gov/genome/annotation_prok/
+CC   ##Genome-Assembly-Data-START##
+CC   Assembly Method        :: SPAdes v. 3.11
+CC   Genome Representation  :: Full
+CC   Expected Final Version :: Yes
+CC   Genome Coverage        :: 10.0x
+CC   Sequencing Technology  :: Illumina MiSeq
+CC   ##Genome-Assembly-Data-END##
+CC   ##Genome-Annotation-Data-START##
+CC   Annotation Provider               :: NCBI
+CC   Annotation Date                   :: 05/07/2018 16:48:01
+CC   Annotation Pipeline               :: NCBI Prokaryotic Genome
+CC                                        Annotation Pipeline
+CC   Annotation Method                 :: Best-placed reference protein
+CC                                        set; GeneMarkS+
+CC   Annotation Software revision      :: 4.5
+CC   Features Annotated                :: Gene; CDS; rRNA; tRNA; ncRNA;
+CC                                        repeat_region
+CC   Genes (total)                     :: 5,418
+CC   CDS (total)                       :: 5,313
+CC   Genes (coding)                    :: 5,030
+CC   CDS (coding)                      :: 5,030
+CC   Genes (RNA)                       :: 105
+CC   rRNAs                             :: 8, 4, 1 (5S, 16S, 23S)
+CC   complete rRNAs                    :: 8, 1, 1 (5S, 16S, 23S)
+CC   partial rRNAs                     :: 3 (16S)
+CC   tRNAs                             :: 87
+CC   ncRNAs                            :: 5
+CC   Pseudo Genes (total)              :: 283
+CC   Pseudo Genes (ambiguous residues) :: 0 of 283
+CC   Pseudo Genes (frameshifted)       :: 111 of 283
+CC   Pseudo Genes (incomplete)         :: 114 of 283
+CC   Pseudo Genes (internal stop)      :: 87 of 283
+CC   Pseudo Genes (multiple problems)  :: 26 of 283
+CC   CRISPR Arrays                     :: 1
+CC   ##Genome-Annotation-Data-END##
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..207
+FT                   /organism="Escherichia coli"
+FT                   /host="Homo sapiens"
+FT                   /strain="E-3"
+FT                   /mol_type="genomic DNA"
+FT                   /country="Bangladesh:Dhaka"
+FT                   /lat_lon="23.81 N 90.41 E"
+FT                   /isolation_source="urine"
+FT                   /collected_by="NGRI"
+FT                   /collection_date="2017"
+FT                   /db_xref="taxon:562"
+XX
+SQ   Sequence 207 BP; 59 A; 42 C; 51 G; 55 T; 0 other;
+     tcagctaaac aacagaccga gaaagacact gaagttcaaa acaccgaaag agataattga        60
+     aaggggtgtt gcattgacag attgaatcta cagtagcctt ttttaatatc gtattttgtt       120
+     cctccagtcg gcgaacctgc ttttccagct cgcgaatacg ttgctgttca ggggtaatgg       180
+     gtgttgcaga gggcgcaata ccttggc                                           207
+//
