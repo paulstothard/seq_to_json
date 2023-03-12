@@ -379,7 +379,7 @@ if __name__ == "__main__":
                         seq_record['length'] + " for feature: " + feature['feature_name'] + \
                         " in sequence: " + seq_record['name'] + "."
 
-    if args.output is not None:
+    if args.output:
         with open(args.output, 'w') as f:
             json.dump(seq_records, f, indent=4)
     else:
