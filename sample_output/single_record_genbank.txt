@@ -1,0 +1,181 @@
+[
+    {
+        "name": "AF177870",
+        "length": "3123",
+        "sequence": "gaacgcgaatgcctctctctctttcgatgggtatgccaattgtccacattcactcgtgttgcctcctctttgccaacacgcaagacaccagaaacgcgtcaaccaaagagaaaaagacgccgacaacgggcagcactcgcgagagacaaaggttatcgcgttgtgttattatacattcgcatccgggtcaactttagtccgttgaacatgcttcttgaaaacctagttctcttaaaataacgttttagaagttttggtcttcagatgtctgattcgctaaatcatccatcgagttctacggtgcatgcagatgatggattcgagccaccaacatctccggaagacaacaacaaaaaaccgtctttagaacaaattaaacaggaaagagaagcgttgtttacggttagttacctattagctgcaagttttgaaaaagcggaatctgtaaaaagcggaatctgtaaaaaaaacatctaaggaataattctgaaaagaaaaagtttctaaatgttaatcggaatccaatttttatgaaattatttaaaaaaaaactaaaattagtttctaaaaaatttttctaaagtaattggaccatgtgaaggtacacccacttgttccaatatgccatatctaactgtaaaataatttgattctcatgagaatatttttcaggatctattcgcagatcgtcgacgaagcgctcgttctgtgattgaagaagctttccaaaacgaactcatgagtgctgaaccagtccagccaaacgtgccgaatccacattgtgagttggaaatttttatttgataaccaagagaaaaaaagttctacctttttttcaaaaacctttccaaaaatgattccatctgatataggattaagaaaaatattttccgaaatctctgcttttcagcgattcccattcgtttccgtcatcaaccagttgctggacctgctcatgatgttttcggagacgcggtgcattcaatttttcaaaaaataatgtccaggtatacactatttttgcatatttttcttgccaaatttggtcaaaaaccgtagtacaacccaaaaagtttcttcatttcagaggagtgaacgcggattatagtcattggatgtcatattggatcgcgttgggaatcgacaaaaaaacacaaatgaactatcatatgaaaccgttttgcaaagatacttatgcaactgaaggctccttaggtaggttagtcttttctaggcacagaagagtgagaaaattctaaatttctgagcagtctgctttttgttttccttgagtttttacttaaagctcttaaaagaaatctaggcgtgaagttcgagccttgtaccataccacaacagcattccaaatgttacagaagcgaaacaaacatttactgataaaatcaggtcagctgttgaggaaattatctggaagtccgctgaatattgtgatattcttagcgagaagtggacaggaattcatgtgtcggccgaccaactgaaaggtcaaagaaataagcaagaagatcgttttgtggcttatccaaatggacaatacatgaatcgtggacaggttagtgcgaatcggggactcaagatttactgaaatagtgaagagaaaacaaaagaaaactatattttcaaaaaaaatgagaactctaataaacagaatgaaaaacattcaaagctacagtagtatttccagctggagtttccagagccaaaaaaatgcgagtattactgtagttttgaaattggtttctcactttacgtacgattttttgatttttttttcagactcttcatatgaaaaaaaatcatgttttctcctttacaagatttttttgatctcaaaacatttccagagtgacatttcacttcttgcggtgttcgatgggcatggcggacacgagtgctctcaatatgcagctgctcatttctgggaagcatggtccgatgctcaacatcatcattcacaagatatgaaacttgacgaactcctagaaaaggctctagaaacattggacgaaagaatgacagtcagaagtgttcgagaatcttggaaaggtggaaccactgctgtctgctgtgctgttgatttgaacactaatcaaatcgcatttgcctggcttggagattcaccagggtaatcaatttttttttagtttttggaactttacgtcccgaaaaattattcctttatcacctaattcctacagtaacccaagctccgaattaaataaagttaaagcgtggtatacacataaaaataagaaaaaattgttcatgaaatccatttttccagttacatcatgtcaaacttggagttccgcaaattcactactgaacactccccgtctgacccggaggaatgtcgacgagtcgaagaagtcggtggccagatttttgtgatcggtggtgagctccgtgtgaatggagtactcaacctgacgcgagcactaggagacgtacctggaagaccaatgatatccaacaaacctgataccttactgaagacgatcgaacctgcggattatcttgttttgttggcctgtgacgggatttctgacgtcttcaacactagtgatttgtacaatttggttcaggcttttgtcaatgaatatgacgtagaaggtatcaaactgatcgtttttcacatcacaaaattcttgaattttccagattatcacgaacttgcacgctacatttgcaatcaagcagtttcagctggaagtgctgacaatgtgacagtagttataggtttcctccgtccaccagaagacgtttggcgtgtaatgaaaacagactcggatgatgaagagagcgagctcgaggaagaagatgacaatgaatagtttattgcaagttttccaaaacttttccaatttccctgggtattgattagcatccatatcttacggcgattatatcaattgtaacattatttctgtttctccccccacctctcaaattttcaaatgaccctttttcttttcgtctacctgtatcgttttccattcatctccccccctccactgtggtatatcattttgtcattagaaagtattattttgattttcattggcagtagaagacaacaggatacagaagaggttttcacag",
+        "features": [
+            {
+                "feature_name": "source",
+                "feature_strand": 1,
+                "location_text": "1..3123",
+                "feature_locations": [
+                    {
+                        "feature_range_start": "1",
+                        "feature_range_end": "3123"
+                    }
+                ],
+                "feature_qualifiers": [
+                    {
+                        "feature_name": "organism",
+                        "feature_value": "Caenorhabditis remanei"
+                    },
+                    {
+                        "feature_name": "db_xref",
+                        "feature_value": "taxon:31234"
+                    }
+                ],
+                "feature_sequence": "gaacgcgaatgcctctctctctttcgatgggtatgccaattgtccacattcactcgtgttgcctcctctttgccaacacgcaagacaccagaaacgcgtcaaccaaagagaaaaagacgccgacaacgggcagcactcgcgagagacaaaggttatcgcgttgtgttattatacattcgcatccgggtcaactttagtccgttgaacatgcttcttgaaaacctagttctcttaaaataacgttttagaagttttggtcttcagatgtctgattcgctaaatcatccatcgagttctacggtgcatgcagatgatggattcgagccaccaacatctccggaagacaacaacaaaaaaccgtctttagaacaaattaaacaggaaagagaagcgttgtttacggttagttacctattagctgcaagttttgaaaaagcggaatctgtaaaaagcggaatctgtaaaaaaaacatctaaggaataattctgaaaagaaaaagtttctaaatgttaatcggaatccaatttttatgaaattatttaaaaaaaaactaaaattagtttctaaaaaatttttctaaagtaattggaccatgtgaaggtacacccacttgttccaatatgccatatctaactgtaaaataatttgattctcatgagaatatttttcaggatctattcgcagatcgtcgacgaagcgctcgttctgtgattgaagaagctttccaaaacgaactcatgagtgctgaaccagtccagccaaacgtgccgaatccacattgtgagttggaaatttttatttgataaccaagagaaaaaaagttctacctttttttcaaaaacctttccaaaaatgattccatctgatataggattaagaaaaatattttccgaaatctctgcttttcagcgattcccattcgtttccgtcatcaaccagttgctggacctgctcatgatgttttcggagacgcggtgcattcaatttttcaaaaaataatgtccaggtatacactatttttgcatatttttcttgccaaatttggtcaaaaaccgtagtacaacccaaaaagtttcttcatttcagaggagtgaacgcggattatagtcattggatgtcatattggatcgcgttgggaatcgacaaaaaaacacaaatgaactatcatatgaaaccgttttgcaaagatacttatgcaactgaaggctccttaggtaggttagtcttttctaggcacagaagagtgagaaaattctaaatttctgagcagtctgctttttgttttccttgagtttttacttaaagctcttaaaagaaatctaggcgtgaagttcgagccttgtaccataccacaacagcattccaaatgttacagaagcgaaacaaacatttactgataaaatcaggtcagctgttgaggaaattatctggaagtccgctgaatattgtgatattcttagcgagaagtggacaggaattcatgtgtcggccgaccaactgaaaggtcaaagaaataagcaagaagatcgttttgtggcttatccaaatggacaatacatgaatcgtggacaggttagtgcgaatcggggactcaagatttactgaaatagtgaagagaaaacaaaagaaaactatattttcaaaaaaaatgagaactctaataaacagaatgaaaaacattcaaagctacagtagtatttccagctggagtttccagagccaaaaaaatgcgagtattactgtagttttgaaattggtttctcactttacgtacgattttttgatttttttttcagactcttcatatgaaaaaaaatcatgttttctcctttacaagatttttttgatctcaaaacatttccagagtgacatttcacttcttgcggtgttcgatgggcatggcggacacgagtgctctcaatatgcagctgctcatttctgggaagcatggtccgatgctcaacatcatcattcacaagatatgaaacttgacgaactcctagaaaaggctctagaaacattggacgaaagaatgacagtcagaagtgttcgagaatcttggaaaggtggaaccactgctgtctgctgtgctgttgatttgaacactaatcaaatcgcatttgcctggcttggagattcaccagggtaatcaatttttttttagtttttggaactttacgtcccgaaaaattattcctttatcacctaattcctacagtaacccaagctccgaattaaataaagttaaagcgtggtatacacataaaaataagaaaaaattgttcatgaaatccatttttccagttacatcatgtcaaacttggagttccgcaaattcactactgaacactccccgtctgacccggaggaatgtcgacgagtcgaagaagtcggtggccagatttttgtgatcggtggtgagctccgtgtgaatggagtactcaacctgacgcgagcactaggagacgtacctggaagaccaatgatatccaacaaacctgataccttactgaagacgatcgaacctgcggattatcttgttttgttggcctgtgacgggatttctgacgtcttcaacactagtgatttgtacaatttggttcaggcttttgtcaatgaatatgacgtagaaggtatcaaactgatcgtttttcacatcacaaaattcttgaattttccagattatcacgaacttgcacgctacatttgcaatcaagcagtttcagctggaagtgctgacaatgtgacagtagttataggtttcctccgtccaccagaagacgtttggcgtgtaatgaaaacagactcggatgatgaagagagcgagctcgaggaagaagatgacaatgaatagtttattgcaagttttccaaaacttttccaatttccctgggtattgattagcatccatatcttacggcgattatatcaattgtaacattatttctgtttctccccccacctctcaaattttcaaatgaccctttttcttttcgtctacctgtatcgttttccattcatctccccccctccactgtggtatatcattttgtcattagaaagtattattttgattttcattggcagtagaagacaacaggatacagaagaggttttcacag",
+                "feature_start": "1",
+                "feature_end": "3123"
+            },
+            {
+                "feature_name": "mRNA",
+                "feature_strand": 1,
+                "location_text": "join(<265..402,673..781,911..1007,1088..1215,1377..1573,1866..2146,2306..2634,2683..>2855)",
+                "feature_locations": [
+                    {
+                        "feature_range_start": "265",
+                        "feature_range_end": "402"
+                    },
+                    {
+                        "feature_range_start": "673",
+                        "feature_range_end": "781"
+                    },
+                    {
+                        "feature_range_start": "911",
+                        "feature_range_end": "1007"
+                    },
+                    {
+                        "feature_range_start": "1088",
+                        "feature_range_end": "1215"
+                    },
+                    {
+                        "feature_range_start": "1377",
+                        "feature_range_end": "1573"
+                    },
+                    {
+                        "feature_range_start": "1866",
+                        "feature_range_end": "2146"
+                    },
+                    {
+                        "feature_range_start": "2306",
+                        "feature_range_end": "2634"
+                    },
+                    {
+                        "feature_range_start": "2683",
+                        "feature_range_end": "2855"
+                    }
+                ],
+                "feature_qualifiers": [
+                    {
+                        "feature_name": "gene",
+                        "feature_value": "fem-2"
+                    },
+                    {
+                        "feature_name": "product",
+                        "feature_value": "putative FEM-2 protein phosphatase type 2C"
+                    }
+                ],
+                "feature_sequence": "atgtctgattcgctaaatcatccatcgagttctacggtgcatgcagatgatggattcgagccaccaacatctccggaagacaacaacaaaaaaccgtctttagaacaaattaaacaggaaagagaagcgttgtttacggatctattcgcagatcgtcgacgaagcgctcgttctgtgattgaagaagctttccaaaacgaactcatgagtgctgaaccagtccagccaaacgtgccgaatccacattcgattcccattcgtttccgtcatcaaccagttgctggacctgctcatgatgttttcggagacgcggtgcattcaatttttcaaaaaataatgtccagaggagtgaacgcggattatagtcattggatgtcatattggatcgcgttgggaatcgacaaaaaaacacaaatgaactatcatatgaaaccgttttgcaaagatacttatgcaactgaaggctccttagaagcgaaacaaacatttactgataaaatcaggtcagctgttgaggaaattatctggaagtccgctgaatattgtgatattcttagcgagaagtggacaggaattcatgtgtcggccgaccaactgaaaggtcaaagaaataagcaagaagatcgttttgtggcttatccaaatggacaatacatgaatcgtggacagagtgacatttcacttcttgcggtgttcgatgggcatggcggacacgagtgctctcaatatgcagctgctcatttctgggaagcatggtccgatgctcaacatcatcattcacaagatatgaaacttgacgaactcctagaaaaggctctagaaacattggacgaaagaatgacagtcagaagtgttcgagaatcttggaaaggtggaaccactgctgtctgctgtgctgttgatttgaacactaatcaaatcgcatttgcctggcttggagattcaccaggttacatcatgtcaaacttggagttccgcaaattcactactgaacactccccgtctgacccggaggaatgtcgacgagtcgaagaagtcggtggccagatttttgtgatcggtggtgagctccgtgtgaatggagtactcaacctgacgcgagcactaggagacgtacctggaagaccaatgatatccaacaaacctgataccttactgaagacgatcgaacctgcggattatcttgttttgttggcctgtgacgggatttctgacgtcttcaacactagtgatttgtacaatttggttcaggcttttgtcaatgaatatgacgtagaagattatcacgaacttgcacgctacatttgcaatcaagcagtttcagctggaagtgctgacaatgtgacagtagttataggtttcctccgtccaccagaagacgtttggcgtgtaatgaaaacagactcggatgatgaagagagcgagctcgaggaagaagatgacaatgaatag",
+                "feature_start": "265",
+                "feature_end": "2855"
+            },
+            {
+                "feature_name": "gene",
+                "feature_strand": 1,
+                "location_text": "<265..>2855",
+                "feature_locations": [
+                    {
+                        "feature_range_start": "265",
+                        "feature_range_end": "2855"
+                    }
+                ],
+                "feature_qualifiers": [
+                    {
+                        "feature_name": "gene",
+                        "feature_value": "fem-2"
+                    }
+                ],
+                "feature_sequence": "atgtctgattcgctaaatcatccatcgagttctacggtgcatgcagatgatggattcgagccaccaacatctccggaagacaacaacaaaaaaccgtctttagaacaaattaaacaggaaagagaagcgttgtttacggttagttacctattagctgcaagttttgaaaaagcggaatctgtaaaaagcggaatctgtaaaaaaaacatctaaggaataattctgaaaagaaaaagtttctaaatgttaatcggaatccaatttttatgaaattatttaaaaaaaaactaaaattagtttctaaaaaatttttctaaagtaattggaccatgtgaaggtacacccacttgttccaatatgccatatctaactgtaaaataatttgattctcatgagaatatttttcaggatctattcgcagatcgtcgacgaagcgctcgttctgtgattgaagaagctttccaaaacgaactcatgagtgctgaaccagtccagccaaacgtgccgaatccacattgtgagttggaaatttttatttgataaccaagagaaaaaaagttctacctttttttcaaaaacctttccaaaaatgattccatctgatataggattaagaaaaatattttccgaaatctctgcttttcagcgattcccattcgtttccgtcatcaaccagttgctggacctgctcatgatgttttcggagacgcggtgcattcaatttttcaaaaaataatgtccaggtatacactatttttgcatatttttcttgccaaatttggtcaaaaaccgtagtacaacccaaaaagtttcttcatttcagaggagtgaacgcggattatagtcattggatgtcatattggatcgcgttgggaatcgacaaaaaaacacaaatgaactatcatatgaaaccgttttgcaaagatacttatgcaactgaaggctccttaggtaggttagtcttttctaggcacagaagagtgagaaaattctaaatttctgagcagtctgctttttgttttccttgagtttttacttaaagctcttaaaagaaatctaggcgtgaagttcgagccttgtaccataccacaacagcattccaaatgttacagaagcgaaacaaacatttactgataaaatcaggtcagctgttgaggaaattatctggaagtccgctgaatattgtgatattcttagcgagaagtggacaggaattcatgtgtcggccgaccaactgaaaggtcaaagaaataagcaagaagatcgttttgtggcttatccaaatggacaatacatgaatcgtggacaggttagtgcgaatcggggactcaagatttactgaaatagtgaagagaaaacaaaagaaaactatattttcaaaaaaaatgagaactctaataaacagaatgaaaaacattcaaagctacagtagtatttccagctggagtttccagagccaaaaaaatgcgagtattactgtagttttgaaattggtttctcactttacgtacgattttttgatttttttttcagactcttcatatgaaaaaaaatcatgttttctcctttacaagatttttttgatctcaaaacatttccagagtgacatttcacttcttgcggtgttcgatgggcatggcggacacgagtgctctcaatatgcagctgctcatttctgggaagcatggtccgatgctcaacatcatcattcacaagatatgaaacttgacgaactcctagaaaaggctctagaaacattggacgaaagaatgacagtcagaagtgttcgagaatcttggaaaggtggaaccactgctgtctgctgtgctgttgatttgaacactaatcaaatcgcatttgcctggcttggagattcaccagggtaatcaatttttttttagtttttggaactttacgtcccgaaaaattattcctttatcacctaattcctacagtaacccaagctccgaattaaataaagttaaagcgtggtatacacataaaaataagaaaaaattgttcatgaaatccatttttccagttacatcatgtcaaacttggagttccgcaaattcactactgaacactccccgtctgacccggaggaatgtcgacgagtcgaagaagtcggtggccagatttttgtgatcggtggtgagctccgtgtgaatggagtactcaacctgacgcgagcactaggagacgtacctggaagaccaatgatatccaacaaacctgataccttactgaagacgatcgaacctgcggattatcttgttttgttggcctgtgacgggatttctgacgtcttcaacactagtgatttgtacaatttggttcaggcttttgtcaatgaatatgacgtagaaggtatcaaactgatcgtttttcacatcacaaaattcttgaattttccagattatcacgaacttgcacgctacatttgcaatcaagcagtttcagctggaagtgctgacaatgtgacagtagttataggtttcctccgtccaccagaagacgtttggcgtgtaatgaaaacagactcggatgatgaagagagcgagctcgaggaagaagatgacaatgaatag",
+                "feature_start": "265",
+                "feature_end": "2855"
+            },
+            {
+                "feature_name": "CDS",
+                "feature_strand": 1,
+                "location_text": "join(265..402,673..781,911..1007,1088..1215,1377..1573,1866..2146,2306..2634,2683..2855)",
+                "feature_locations": [
+                    {
+                        "feature_range_start": "265",
+                        "feature_range_end": "402"
+                    },
+                    {
+                        "feature_range_start": "673",
+                        "feature_range_end": "781"
+                    },
+                    {
+                        "feature_range_start": "911",
+                        "feature_range_end": "1007"
+                    },
+                    {
+                        "feature_range_start": "1088",
+                        "feature_range_end": "1215"
+                    },
+                    {
+                        "feature_range_start": "1377",
+                        "feature_range_end": "1573"
+                    },
+                    {
+                        "feature_range_start": "1866",
+                        "feature_range_end": "2146"
+                    },
+                    {
+                        "feature_range_start": "2306",
+                        "feature_range_end": "2634"
+                    },
+                    {
+                        "feature_range_start": "2683",
+                        "feature_range_end": "2855"
+                    }
+                ],
+                "feature_qualifiers": [
+                    {
+                        "feature_name": "gene",
+                        "feature_value": "fem-2"
+                    },
+                    {
+                        "feature_name": "note",
+                        "feature_value": "possible sex-determining protein"
+                    },
+                    {
+                        "feature_name": "codon_start",
+                        "feature_value": "1"
+                    },
+                    {
+                        "feature_name": "product",
+                        "feature_value": "putative PP2C protein phosphatase FEM-2"
+                    },
+                    {
+                        "feature_name": "protein_id",
+                        "feature_value": "AAF04557.1"
+                    },
+                    {
+                        "feature_name": "db_xref",
+                        "feature_value": "PID:g6164829"
+                    },
+                    {
+                        "feature_name": "db_xref",
+                        "feature_value": "GI:6164829"
+                    },
+                    {
+                        "feature_name": "translation",
+                        "feature_value": "MSDSLNHPSSSTVHADDGFEPPTSPEDNNKKPSLEQIKQEREALFTDLFADRRRSARSVIEEAFQNELMSAEPVQPNVPNPHSIPIRFRHQPVAGPAHDVFGDAVHSIFQKIMSRGVNADYSHWMSYWIALGIDKKTQMNYHMKPFCKDTYATEGSLEAKQTFTDKIRSAVEEIIWKSAEYCDILSEKWTGIHVSADQLKGQRNKQEDRFVAYPNGQYMNRGQSDISLLAVFDGHGGHECSQYAAAHFWEAWSDAQHHHSQDMKLDELLEKALETLDERMTVRSVRESWKGGTTAVCCAVDLNTNQIAFAWLGDSPGYIMSNLEFRKFTTEHSPSDPEECRRVEEVGGQIFVIGGELRVNGVLNLTRALGDVPGRPMISNKPDTLLKTIEPADYLVLLACDGISDVFNTSDLYNLVQAFVNEYDVEDYHELARYICNQAVSAGSADNVTVVIGFLRPPEDVWRVMKTDSDDEESELEEEDDNE"
+                    }
+                ],
+                "feature_sequence": "atgtctgattcgctaaatcatccatcgagttctacggtgcatgcagatgatggattcgagccaccaacatctccggaagacaacaacaaaaaaccgtctttagaacaaattaaacaggaaagagaagcgttgtttacggatctattcgcagatcgtcgacgaagcgctcgttctgtgattgaagaagctttccaaaacgaactcatgagtgctgaaccagtccagccaaacgtgccgaatccacattcgattcccattcgtttccgtcatcaaccagttgctggacctgctcatgatgttttcggagacgcggtgcattcaatttttcaaaaaataatgtccagaggagtgaacgcggattatagtcattggatgtcatattggatcgcgttgggaatcgacaaaaaaacacaaatgaactatcatatgaaaccgttttgcaaagatacttatgcaactgaaggctccttagaagcgaaacaaacatttactgataaaatcaggtcagctgttgaggaaattatctggaagtccgctgaatattgtgatattcttagcgagaagtggacaggaattcatgtgtcggccgaccaactgaaaggtcaaagaaataagcaagaagatcgttttgtggcttatccaaatggacaatacatgaatcgtggacagagtgacatttcacttcttgcggtgttcgatgggcatggcggacacgagtgctctcaatatgcagctgctcatttctgggaagcatggtccgatgctcaacatcatcattcacaagatatgaaacttgacgaactcctagaaaaggctctagaaacattggacgaaagaatgacagtcagaagtgttcgagaatcttggaaaggtggaaccactgctgtctgctgtgctgttgatttgaacactaatcaaatcgcatttgcctggcttggagattcaccaggttacatcatgtcaaacttggagttccgcaaattcactactgaacactccccgtctgacccggaggaatgtcgacgagtcgaagaagtcggtggccagatttttgtgatcggtggtgagctccgtgtgaatggagtactcaacctgacgcgagcactaggagacgtacctggaagaccaatgatatccaacaaacctgataccttactgaagacgatcgaacctgcggattatcttgttttgttggcctgtgacgggatttctgacgtcttcaacactagtgatttgtacaatttggttcaggcttttgtcaatgaatatgacgtagaagattatcacgaacttgcacgctacatttgcaatcaagcagtttcagctggaagtgctgacaatgtgacagtagttataggtttcctccgtccaccagaagacgtttggcgtgtaatgaaaacagactcggatgatgaagagagcgagctcgaggaagaagatgacaatgaatag",
+                "feature_start": "265",
+                "feature_end": "2855"
+            }
+        ]
+    }
+]

@@ -1,0 +1,335 @@
+[
+    {
+        "name": "QEXN01000145;",
+        "length": "245",
+        "sequence": "gagcaggcggttgtattcagccatctggcgtatggtgtcctgttgcgtctgcaacagtgcccgcaggcgggcgttctcatgagcaagtgaggtgtccatatcctcactttacaacgggttatatgcggattccagcgcgttccgttcgtttcgggtgcttccagttgataccttcaagaagcatggataactgagccggagtaaggtgcaccttgccgtcacgggtgactggccagacgaagcgg",
+        "features": [
+            {
+                "feature_name": "source",
+                "feature_strand": 1,
+                "location_text": "1..245",
+                "feature_locations": [
+                    {
+                        "feature_range_start": "1",
+                        "feature_range_end": "245"
+                    }
+                ],
+                "feature_qualifiers": [
+                    {
+                        "feature_name": "organism",
+                        "feature_value": "Escherichia coli"
+                    },
+                    {
+                        "feature_name": "host",
+                        "feature_value": "Homo sapiens"
+                    },
+                    {
+                        "feature_name": "strain",
+                        "feature_value": "E-3"
+                    },
+                    {
+                        "feature_name": "mol_type",
+                        "feature_value": "genomic DNA"
+                    },
+                    {
+                        "feature_name": "country",
+                        "feature_value": "Bangladesh:Dhaka"
+                    },
+                    {
+                        "feature_name": "lat_lon",
+                        "feature_value": "23.81 N 90.41 E"
+                    },
+                    {
+                        "feature_name": "isolation_source",
+                        "feature_value": "urine"
+                    },
+                    {
+                        "feature_name": "collected_by",
+                        "feature_value": "NGRI"
+                    },
+                    {
+                        "feature_name": "collection_date",
+                        "feature_value": "2017"
+                    },
+                    {
+                        "feature_name": "db_xref",
+                        "feature_value": "taxon:562"
+                    }
+                ],
+                "feature_sequence": "gagcaggcggttgtattcagccatctggcgtatggtgtcctgttgcgtctgcaacagtgcccgcaggcgggcgttctcatgagcaagtgaggtgtccatatcctcactttacaacgggttatatgcggattccagcgcgttccgttcgtttcgggtgcttccagttgataccttcaagaagcatggataactgagccggagtaaggtgcaccttgccgtcacgggtgactggccagacgaagcgg",
+                "feature_start": "1",
+                "feature_end": "245"
+            },
+            {
+                "feature_name": "gene",
+                "feature_strand": -1,
+                "location_text": "complement(119..>245)",
+                "feature_locations": [
+                    {
+                        "feature_range_start": "119",
+                        "feature_range_end": "245"
+                    }
+                ],
+                "feature_qualifiers": [
+                    {
+                        "feature_name": "locus_tag",
+                        "feature_value": "DF178_27085"
+                    }
+                ],
+                "feature_sequence": "ccgcttcgtctggccagtcacccgtgacggcaaggtgcaccttactccggctcagttatccatgcttcttgaaggtatcaactggaagcacccgaaacgaacggaacgcgctggaatccgcatataa",
+                "feature_start": "119",
+                "feature_end": "245"
+            },
+            {
+                "feature_name": "CDS",
+                "feature_strand": -1,
+                "location_text": "complement(119..>245)",
+                "feature_locations": [
+                    {
+                        "feature_range_start": "119",
+                        "feature_range_end": "245"
+                    }
+                ],
+                "feature_qualifiers": [
+                    {
+                        "feature_name": "codon_start",
+                        "feature_value": "2"
+                    },
+                    {
+                        "feature_name": "transl_table",
+                        "feature_value": "11"
+                    },
+                    {
+                        "feature_name": "locus_tag",
+                        "feature_value": "DF178_27085"
+                    },
+                    {
+                        "feature_name": "product",
+                        "feature_value": "IS66 family insertion sequence hypothetical protein"
+                    },
+                    {
+                        "feature_name": "note",
+                        "feature_value": "Derived by automated computational analysis using gene prediction method: Protein Homology."
+                    },
+                    {
+                        "feature_name": "db_xref",
+                        "feature_value": "UniProtKB/TrEMBL:A0A4S5F3T3"
+                    },
+                    {
+                        "feature_name": "inference",
+                        "feature_value": "COORDINATES:similar to AA sequence:RefSeq:WP_006118364.1"
+                    },
+                    {
+                        "feature_name": "protein_id",
+                        "feature_value": "THJ79895.1"
+                    },
+                    {
+                        "feature_name": "translation",
+                        "feature_value": "RFVWPVTRDGKVHLTPAQLSMLLEGINWKHPKRTERAGIRI"
+                    }
+                ],
+                "feature_sequence": "ccgcttcgtctggccagtcacccgtgacggcaaggtgcaccttactccggctcagttatccatgcttcttgaaggtatcaactggaagcacccgaaacgaacggaacgcgctggaatccgcatataa",
+                "feature_start": "119",
+                "feature_end": "245"
+            }
+        ]
+    },
+    {
+        "name": "QEXN01000146;",
+        "length": "222",
+        "sequence": "agaggcggtcgaactccgccttcgcaaaataagcggaagcctggcgaaggatatcgttactgcggcgcagttcacgattttcacgtcccagctctttcagccgctgccgttcagcggtggggagcccgccatcaccgcctccggtatcccgctcatgctggcgtacccagacacgcagagtctccggtgtacagccaatctttggggcaatggaacaaattg",
+        "features": [
+            {
+                "feature_name": "source",
+                "feature_strand": 1,
+                "location_text": "1..222",
+                "feature_locations": [
+                    {
+                        "feature_range_start": "1",
+                        "feature_range_end": "222"
+                    }
+                ],
+                "feature_qualifiers": [
+                    {
+                        "feature_name": "organism",
+                        "feature_value": "Escherichia coli"
+                    },
+                    {
+                        "feature_name": "host",
+                        "feature_value": "Homo sapiens"
+                    },
+                    {
+                        "feature_name": "strain",
+                        "feature_value": "E-3"
+                    },
+                    {
+                        "feature_name": "mol_type",
+                        "feature_value": "genomic DNA"
+                    },
+                    {
+                        "feature_name": "country",
+                        "feature_value": "Bangladesh:Dhaka"
+                    },
+                    {
+                        "feature_name": "lat_lon",
+                        "feature_value": "23.81 N 90.41 E"
+                    },
+                    {
+                        "feature_name": "isolation_source",
+                        "feature_value": "urine"
+                    },
+                    {
+                        "feature_name": "collected_by",
+                        "feature_value": "NGRI"
+                    },
+                    {
+                        "feature_name": "collection_date",
+                        "feature_value": "2017"
+                    },
+                    {
+                        "feature_name": "db_xref",
+                        "feature_value": "taxon:562"
+                    }
+                ],
+                "feature_sequence": "agaggcggtcgaactccgccttcgcaaaataagcggaagcctggcgaaggatatcgttactgcggcgcagttcacgattttcacgtcccagctctttcagccgctgccgttcagcggtggggagcccgccatcaccgcctccggtatcccgctcatgctggcgtacccagacacgcagagtctccggtgtacagccaatctttggggcaatggaacaaattg",
+                "feature_start": "1",
+                "feature_end": "222"
+            },
+            {
+                "feature_name": "gene",
+                "feature_strand": -1,
+                "location_text": "complement(<1..>222)",
+                "feature_locations": [
+                    {
+                        "feature_range_start": "1",
+                        "feature_range_end": "222"
+                    }
+                ],
+                "feature_qualifiers": [
+                    {
+                        "feature_name": "locus_tag",
+                        "feature_value": "DF178_27090"
+                    }
+                ],
+                "feature_sequence": "caatttgttccattgccccaaagattggctgtacaccggagactctgcgtgtctgggtacgccagcatgagcgggataccggaggcggtgatggcgggctccccaccgctgaacggcagcggctgaaagagctgggacgtgaaaatcgtgaactgcgccgcagtaacgatatccttcgccaggcttccgcttattttgcgaaggcggagttcgaccgcctct",
+                "feature_start": "1",
+                "feature_end": "222"
+            },
+            {
+                "feature_name": "CDS",
+                "feature_strand": -1,
+                "location_text": "complement(<1..>222)",
+                "feature_locations": [
+                    {
+                        "feature_range_start": "1",
+                        "feature_range_end": "222"
+                    }
+                ],
+                "feature_qualifiers": [
+                    {
+                        "feature_name": "codon_start",
+                        "feature_value": "3"
+                    },
+                    {
+                        "feature_name": "transl_table",
+                        "feature_value": "11"
+                    },
+                    {
+                        "feature_name": "locus_tag",
+                        "feature_value": "DF178_27090"
+                    },
+                    {
+                        "feature_name": "product",
+                        "feature_value": "IS3 family transposase"
+                    },
+                    {
+                        "feature_name": "note",
+                        "feature_value": "Derived by automated computational analysis using gene prediction method: Protein Homology."
+                    },
+                    {
+                        "feature_name": "db_xref",
+                        "feature_value": "UniProtKB/TrEMBL:A0A4S5F3Q8"
+                    },
+                    {
+                        "feature_name": "inference",
+                        "feature_value": "COORDINATES:similar to AA sequence:RefSeq:WP_076612086.1"
+                    },
+                    {
+                        "feature_name": "protein_id",
+                        "feature_value": "THJ79857.1"
+                    },
+                    {
+                        "feature_name": "translation",
+                        "feature_value": "ICSIAPKIGCTPETLRVWVRQHERDTGGGDGGLPTAERQRLKELGRENRELRRSNDILRQASAYFAKAEFDRL"
+                    }
+                ],
+                "feature_sequence": "caatttgttccattgccccaaagattggctgtacaccggagactctgcgtgtctgggtacgccagcatgagcgggataccggaggcggtgatggcgggctccccaccgctgaacggcagcggctgaaagagctgggacgtgaaaatcgtgaactgcgccgcagtaacgatatccttcgccaggcttccgcttattttgcgaaggcggagttcgaccgcctct",
+                "feature_start": "1",
+                "feature_end": "222"
+            }
+        ]
+    },
+    {
+        "name": "QEXN01000147;",
+        "length": "207",
+        "sequence": "tcagctaaacaacagaccgagaaagacactgaagttcaaaacaccgaaagagataattgaaaggggtgttgcattgacagattgaatctacagtagccttttttaatatcgtattttgttcctccagtcggcgaacctgcttttccagctcgcgaatacgttgctgttcaggggtaatgggtgttgcagagggcgcaataccttggc",
+        "features": [
+            {
+                "feature_name": "source",
+                "feature_strand": 1,
+                "location_text": "1..207",
+                "feature_locations": [
+                    {
+                        "feature_range_start": "1",
+                        "feature_range_end": "207"
+                    }
+                ],
+                "feature_qualifiers": [
+                    {
+                        "feature_name": "organism",
+                        "feature_value": "Escherichia coli"
+                    },
+                    {
+                        "feature_name": "host",
+                        "feature_value": "Homo sapiens"
+                    },
+                    {
+                        "feature_name": "strain",
+                        "feature_value": "E-3"
+                    },
+                    {
+                        "feature_name": "mol_type",
+                        "feature_value": "genomic DNA"
+                    },
+                    {
+                        "feature_name": "country",
+                        "feature_value": "Bangladesh:Dhaka"
+                    },
+                    {
+                        "feature_name": "lat_lon",
+                        "feature_value": "23.81 N 90.41 E"
+                    },
+                    {
+                        "feature_name": "isolation_source",
+                        "feature_value": "urine"
+                    },
+                    {
+                        "feature_name": "collected_by",
+                        "feature_value": "NGRI"
+                    },
+                    {
+                        "feature_name": "collection_date",
+                        "feature_value": "2017"
+                    },
+                    {
+                        "feature_name": "db_xref",
+                        "feature_value": "taxon:562"
+                    }
+                ],
+                "feature_sequence": "tcagctaaacaacagaccgagaaagacactgaagttcaaaacaccgaaagagataattgaaaggggtgttgcattgacagattgaatctacagtagccttttttaatatcgtattttgttcctccagtcggcgaacctgcttttccagctcgcgaatacgttgctgttcaggggtaatgggtgttgcagagggcgcaataccttggc",
+                "feature_start": "1",
+                "feature_end": "207"
+            }
+        ]
+    }
+]
