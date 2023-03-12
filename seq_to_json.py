@@ -104,6 +104,8 @@ def get_seq_records(sequence_file_text):
         record['sequence'] = get_seq(record_text)
         record['features'] = get_features(record_text)
         records.append(record)
+    if (len(records) == 0):
+        sys.exit("No sequence records found in file") 
     return records
 
 
@@ -253,7 +255,7 @@ def add_feature_sequences(seq_records):
                     dna.append(subseq)
                 except:
                     eprint("Unable to add feature sequence for feature: " +
-                           feature['feature_name'] + " in sequence: " + seq_record['name'] + ".")
+                           feature['feature_name'] + " in sequence: '" + seq_record['name'] + "'.")
                     break
             if feature['feature_strand'] == -1:
                 feature['feature_sequence'] = reverse(complement("".join(dna)))
@@ -274,7 +276,7 @@ def add_overall_feature_start_and_end(seq_records):
                     d['feature_range_end']), reverse=True)[0]['feature_range_end']
             except:
                 eprint("Unable to add overall feature start and end for feature: " +
-                       feature['feature_name'] + " in sequence: " + seq_record['name'] + ".")
+                       feature['feature_name'] + " in sequence: '" + seq_record['name'] + "'.")
 
 
 # get an array of dictionaries containing feature information from a GenBank or EMBL record
@@ -329,14 +331,14 @@ if __name__ == "__main__":
 
     # run sanity checks on the results
     for seq_record in seq_records:
-        assert seq_record['length'] or seq_record['sequence'], "Sequence length and sequence are both missing for sequence: " + seq_record['name'] + "."
+        assert seq_record['length'] or seq_record['sequence'], "Sequence length and sequence are both missing for sequence: '" + seq_record['name'] + "'."
         if not seq_record['length'] and seq_record['sequence']:
             seq_record['length'] = len(seq_record['sequence'])
         if seq_record['length'] and seq_record['sequence']:
             assert int(seq_record['length']) == len(seq_record['sequence']), "Reported sequence length " + seq_record['length'] + \
                 "does not match actual sequence length " + \
                 str(len(seq_record['sequence'])) + \
-                " for sequence: " + seq_record['name'] + "."
+                " for sequence: '" + seq_record['name'] + "'."
         for feature in seq_record['features']:
             if feature['feature_start'] and feature['feature_end']:
                 assert int(feature['feature_end']) >= int(feature['feature_start']), "Feature end " + feature['feature_end'] + " is less than feature start " + \
@@ -346,21 +348,21 @@ if __name__ == "__main__":
             if feature['feature_start'] and seq_record['length']:
                 assert int(feature['feature_start']) <= int(seq_record['length']), "Feature start " + feature['feature_start'] + " is greater than sequence length " + \
                     seq_record['length'] + " for feature: " + feature['feature_name'] + \
-                    " in sequence: " + seq_record['name'] + "."
+                    " in sequence: '" + seq_record['name'] + "'."
             if feature['feature_end'] and seq_record['length']:
                 assert int(feature['feature_end']) <= int(seq_record['length']), "Feature end " + feature['feature_end'] + " is greater than sequence length " + \
                     seq_record['length'] + " for feature: " + feature['feature_name'] + \
-                    " in sequence: " + seq_record['name'] + "."
+                    " in sequence: '" + seq_record['name'] + "'."
             if feature['feature_sequence'] and seq_record['length']:
                 assert len(feature['feature_sequence']) <= int(seq_record['length']), "Feature sequence " + feature['feature_sequence'] + \
                     " is greater than sequence length " + \
                     seq_record['length'] + " for feature: " + feature['feature_name'] + \
-                    " in sequence: " + seq_record['name'] + "."
+                    " in sequence: '" + seq_record['name'] + "'."
             if feature['feature_sequence']:
                 expected_length = sum(map(lambda dict: int(dict['feature_range_end']) - int(
                     dict['feature_range_start']) + 1, feature['feature_locations']))
                 assert len(feature['feature_sequence']) == expected_length, "Feature sequence " + feature['feature_sequence'] + " is not the expected length " + str(
-                    expected_length) + " for feature: " + feature['feature_name'] + " in sequence: " + seq_record['name'] + "."
+                    expected_length) + " for feature: " + feature['feature_name'] + " in sequence: '" + seq_record['name'] + "'."
             for locations in feature['feature_locations']:
                 if locations['feature_range_start'] and locations['feature_range_end']:
                     assert int(locations['feature_range_end']) >= int(locations['feature_range_start']), "Feature range end " + locations['feature_range_end'] + \
@@ -372,12 +374,12 @@ if __name__ == "__main__":
                     assert int(locations['feature_range_start']) <= int(seq_record['length']), "Feature range start " + locations['feature_range_start'] + \
                         " is greater than sequence length " + \
                         seq_record['length'] + " for feature: " + feature['feature_name'] + \
-                        " in sequence: " + seq_record['name'] + "."
+                        " in sequence: '" + seq_record['name'] + "'."
                 if locations['feature_range_end'] and seq_record['length']:
                     assert int(locations['feature_range_end']) <= int(seq_record['length']), "Feature range end " + locations['feature_range_end'] + \
                         " is greater than sequence length " + \
                         seq_record['length'] + " for feature: " + feature['feature_name'] + \
-                        " in sequence: " + seq_record['name'] + "."
+                        " in sequence: '" + seq_record['name'] + "'."
 
     if args.output:
         with open(args.output, 'w') as f:
