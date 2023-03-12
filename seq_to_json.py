@@ -2,7 +2,7 @@
 """\
 This script extracts feature information from GenBank and EMBL files and converts to JSON
 
-Usage: seq_to_json.py input.gb
+Usage: python seq_to_json.py input.gb
 
 Author: Paul Stothard
 """
@@ -310,7 +310,7 @@ def get_features(sequence_record_text):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        prog='seq_to_json.py', description='Extracts feature information from GenBank and EMBL files and converts to JSON', epilog='seq_to_json.py input.gb')
+        prog='seq_to_json.py', description='Extracts feature information from GenBank and EMBL files and converts to JSON', epilog='python seq_to_json.py input.gb')
     parser.add_argument('input', help='GenBank or EMBL file to parse')
     parser.add_argument('-o', '--output', type=str,
                         help='JSON file to create, otherwise write to stdout')
