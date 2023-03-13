@@ -105,7 +105,7 @@ def get_seq_records(sequence_file_text):
         record['features'] = get_features(record_text)
         records.append(record)
     if (len(records) == 0):
-        sys.exit("No sequence records found in file") 
+        sys.exit("No sequence records found in file")
     return records
 
 
@@ -172,6 +172,12 @@ def get_feature_locations(feature_text):
                 location['feature_range_start'] = m.group(1)
                 location['feature_range_end'] = m.group(2)
                 locations.append(location)
+            else:
+                m = re.search(r'(\d+)', range)
+                if m:
+                    location['feature_range_start'] = m.group(1)
+                    location['feature_range_end'] = m.group(1)
+                    locations.append(location)
     return locations
 
 
@@ -331,7 +337,8 @@ if __name__ == "__main__":
 
     # run sanity checks on the results
     for seq_record in seq_records:
-        assert seq_record['length'] or seq_record['sequence'], "Sequence length and sequence are both missing for sequence: '" + seq_record['name'] + "'."
+        assert seq_record['length'] or seq_record['sequence'], "Sequence length and sequence are both missing for sequence: '" + \
+            seq_record['name'] + "'."
         if not seq_record['length'] and seq_record['sequence']:
             seq_record['length'] = len(seq_record['sequence'])
         if seq_record['length'] and seq_record['sequence']:
@@ -380,6 +387,12 @@ if __name__ == "__main__":
                         " is greater than sequence length " + \
                         seq_record['length'] + " for feature: " + feature['feature_name'] + \
                         " in sequence: '" + seq_record['name'] + "'."
+
+    # remove 'feature_start' and 'feature_end' keys to avoid confusion
+    for seq_record in seq_records:
+        for feature in seq_record['features']:
+            del feature['feature_start']
+            del feature['feature_end']
 
     if args.output:
         with open(args.output, 'w') as f:

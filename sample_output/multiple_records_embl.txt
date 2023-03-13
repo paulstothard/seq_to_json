@@ -56,9 +56,7 @@
                         "feature_value": "taxon:562"
                     }
                 ],
-                "feature_sequence": "gagcaggcggttgtattcagccatctggcgtatggtgtcctgttgcgtctgcaacagtgcccgcaggcgggcgttctcatgagcaagtgaggtgtccatatcctcactttacaacgggttatatgcggattccagcgcgttccgttcgtttcgggtgcttccagttgataccttcaagaagcatggataactgagccggagtaaggtgcaccttgccgtcacgggtgactggccagacgaagcgg",
-                "feature_start": "1",
-                "feature_end": "245"
+                "feature_sequence": "gagcaggcggttgtattcagccatctggcgtatggtgtcctgttgcgtctgcaacagtgcccgcaggcgggcgttctcatgagcaagtgaggtgtccatatcctcactttacaacgggttatatgcggattccagcgcgttccgttcgtttcgggtgcttccagttgataccttcaagaagcatggataactgagccggagtaaggtgcaccttgccgtcacgggtgactggccagacgaagcgg"
             },
             {
                 "feature_name": "gene",
@@ -76,9 +74,7 @@
                         "feature_value": "DF178_27085"
                     }
                 ],
-                "feature_sequence": "ccgcttcgtctggccagtcacccgtgacggcaaggtgcaccttactccggctcagttatccatgcttcttgaaggtatcaactggaagcacccgaaacgaacggaacgcgctggaatccgcatataa",
-                "feature_start": "119",
-                "feature_end": "245"
+                "feature_sequence": "ccgcttcgtctggccagtcacccgtgacggcaaggtgcaccttactccggctcagttatccatgcttcttgaaggtatcaactggaagcacccgaaacgaacggaacgcgctggaatccgcatataa"
             },
             {
                 "feature_name": "CDS",
@@ -128,9 +124,7 @@
                         "feature_value": "RFVWPVTRDGKVHLTPAQLSMLLEGINWKHPKRTERAGIRI"
                     }
                 ],
-                "feature_sequence": "ccgcttcgtctggccagtcacccgtgacggcaaggtgcaccttactccggctcagttatccatgcttcttgaaggtatcaactggaagcacccgaaacgaacggaacgcgctggaatccgcatataa",
-                "feature_start": "119",
-                "feature_end": "245"
+                "feature_sequence": "ccgcttcgtctggccagtcacccgtgacggcaaggtgcaccttactccggctcagttatccatgcttcttgaaggtatcaactggaagcacccgaaacgaacggaacgcgctggaatccgcatataa"
             }
         ]
     },
@@ -191,9 +185,7 @@
                         "feature_value": "taxon:562"
                     }
                 ],
-                "feature_sequence": "agaggcggtcgaactccgccttcgcaaaataagcggaagcctggcgaaggatatcgttactgcggcgcagttcacgattttcacgtcccagctctttcagccgctgccgttcagcggtggggagcccgccatcaccgcctccggtatcccgctcatgctggcgtacccagacacgcagagtctccggtgtacagccaatctttggggcaatggaacaaattg",
-                "feature_start": "1",
-                "feature_end": "222"
+                "feature_sequence": "agaggcggtcgaactccgccttcgcaaaataagcggaagcctggcgaaggatatcgttactgcggcgcagttcacgattttcacgtcccagctctttcagccgctgccgttcagcggtggggagcccgccatcaccgcctccggtatcccgctcatgctggcgtacccagacacgcagagtctccggtgtacagccaatctttggggcaatggaacaaattg"
             },
             {
                 "feature_name": "gene",
@@ -211,9 +203,7 @@
                         "feature_value": "DF178_27090"
                     }
                 ],
-                "feature_sequence": "caatttgttccattgccccaaagattggctgtacaccggagactctgcgtgtctgggtacgccagcatgagcgggataccggaggcggtgatggcgggctccccaccgctgaacggcagcggctgaaagagctgggacgtgaaaatcgtgaactgcgccgcagtaacgatatccttcgccaggcttccgcttattttgcgaaggcggagttcgaccgcctct",
-                "feature_start": "1",
-                "feature_end": "222"
+                "feature_sequence": "caatttgttccattgccccaaagattggctgtacaccggagactctgcgtgtctgggtacgccagcatgagcgggataccggaggcggtgatggcgggctccccaccgctgaacggcagcggctgaaagagctgggacgtgaaaatcgtgaactgcgccgcagtaacgatatccttcgccaggcttccgcttattttgcgaaggcggagttcgaccgcctct"
             },
             {
                 "feature_name": "CDS",
@@ -263,9 +253,7 @@
                         "feature_value": "ICSIAPKIGCTPETLRVWVRQHERDTGGGDGGLPTAERQRLKELGRENRELRRSNDILRQASAYFAKAEFDRL"
                     }
                 ],
-                "feature_sequence": "caatttgttccattgccccaaagattggctgtacaccggagactctgcgtgtctgggtacgccagcatgagcgggataccggaggcggtgatggcgggctccccaccgctgaacggcagcggctgaaagagctgggacgtgaaaatcgtgaactgcgccgcagtaacgatatccttcgccaggcttccgcttattttgcgaaggcggagttcgaccgcctct",
-                "feature_start": "1",
-                "feature_end": "222"
+                "feature_sequence": "caatttgttccattgccccaaagattggctgtacaccggagactctgcgtgtctgggtacgccagcatgagcgggataccggaggcggtgatggcgggctccccaccgctgaacggcagcggctgaaagagctgggacgtgaaaatcgtgaactgcgccgcagtaacgatatccttcgccaggcttccgcttattttgcgaaggcggagttcgaccgcctct"
             }
         ]
     },
@@ -326,9 +314,7 @@
                         "feature_value": "taxon:562"
                     }
                 ],
-                "feature_sequence": "tcagctaaacaacagaccgagaaagacactgaagttcaaaacaccgaaagagataattgaaaggggtgttgcattgacagattgaatctacagtagccttttttaatatcgtattttgttcctccagtcggcgaacctgcttttccagctcgcgaatacgttgctgttcaggggtaatgggtgttgcagagggcgcaataccttggc",
-                "feature_start": "1",
-                "feature_end": "207"
+                "feature_sequence": "tcagctaaacaacagaccgagaaagacactgaagttcaaaacaccgaaagagataattgaaaggggtgttgcattgacagattgaatctacagtagccttttttaatatcgtattttgttcctccagtcggcgaacctgcttttccagctcgcgaatacgttgctgttcaggggtaatgggtgttgcagagggcgcaataccttggc"
             }
         ]
     }

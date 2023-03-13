@@ -1,0 +1,323 @@
+LOCUS       AF177870                3123 bp    DNA     linear   INV 30-MAR-2006
+DEFINITION  Caenorhabditis sp. CB5161 putative PP2C protein phosphatase FEM-2
+            (fem-2) gene, complete cds.
+ACCESSION   AF177870
+VERSION     AF177870.1
+KEYWORDS    .
+SOURCE      Caenorhabditis brenneri
+  ORGANISM  Caenorhabditis brenneri
+            Eukaryota; Metazoa; Ecdysozoa; Nematoda; Chromadorea; Rhabditida;
+            Rhabditina; Rhabditomorpha; Rhabditoidea; Rhabditidae; Peloderinae;
+            Caenorhabditis.
+REFERENCE   1  (bases 1 to 3123)
+  AUTHORS   Stothard,P., Hansen,D. and Pilgrim,D.
+  TITLE     Evolution of the PP2C family in Caenorhabditis: rapid divergence of
+            the sex-determining protein FEM-2
+  JOURNAL   J. Mol. Evol. 54 (2), 267-282 (2002)
+   PUBMED   11821919
+REFERENCE   2  (bases 1 to 3123)
+  AUTHORS   Stothard,P. and Pilgrim,D.
+  TITLE     Conspecific and interspecific interactions between the FEM-2 and
+            the FEM-3 sex-determining proteins despite rapid sequence
+            divergence
+  JOURNAL   J. Mol. Evol. 62 (3), 281-291 (2006)
+   PUBMED   16477523
+REFERENCE   3  (bases 1 to 3123)
+  AUTHORS   Stothard,P.M., Hansen,D. and Pilgrim,D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-AUG-1999) Biological Sciences, University of Alberta,
+            Edmonton, AB T6G-2E9, Canada
+FEATURES             Location/Qualifiers
+     source          1..3123
+                     /organism="Caenorhabditis brenneri"
+                     /mol_type="genomic DNA"
+                     /strain="CB5161"
+                     /db_xref="taxon:135651"
+     gene            <265..>2855
+                     /gene="fem-2"
+     mRNA            join(<265..402,673..781,911..1007,1088..1215,1377..1573,
+                     1866..2146,2306..2634,2683..>2855)
+                     /gene="fem-2"
+                     /product="putative FEM-2 protein phosphatase type 2C"
+     CDS             join(265..402,673..781,911..1007,1088..1215,1377..1573,
+                     1866..2146,2306..2634,2683..2855)
+                     /gene="fem-2"
+                     /note="possible sex-determining protein"
+                     /codon_start=1
+                     /product="putative PP2C protein phosphatase FEM-2"
+                     /protein_id="AAF04557.1"
+                     /translation="MSDSLNHPSSSTVHADDGFEPPTSPEDNNKKPSLEQIKQEREAL
+                     FTDLFADRRRSARSVIEEAFQNELMSAEPVQPNVPNPHSIPIRFRHQPVAGPAHDVFG
+                     DAVHSIFQKIMSRGVNADYSHWMSYWIALGIDKKTQMNYHMKPFCKDTYATEGSLEAK
+                     QTFTDKIRSAVEEIIWKSAEYCDILSEKWTGIHVSADQLKGQRNKQEDRFVAYPNGQY
+                     MNRGQSDISLLAVFDGHGGHECSQYAAAHFWEAWSDAQHHHSQDMKLDELLEKALETL
+                     DERMTVRSVRESWKGGTTAVCCAVDLNTNQIAFAWLGDSPGYIMSNLEFRKFTTEHSP
+                     SDPEECRRVEEVGGQIFVIGGELRVNGVLNLTRALGDVPGRPMISNKPDTLLKTIEPA
+                     DYLVLLACDGISDVFNTSDLYNLVQAFVNEYDVEDYHELARYICNQAVSAGSADNVTV
+                     VIGFLRPPEDVWRVMKTDSDDEESELEEEDDNE"
+ORIGIN      
+        1 gaacgcgaat gcctctctct ctttcgatgg gtatgccaat tgtccacatt cactcgtgtt
+       61 gcctcctctt tgccaacacg caagacacca gaaacgcgtc aaccaaagag aaaaagacgc
+      121 cgacaacggg cagcactcgc gagagacaaa ggttatcgcg ttgtgttatt atacattcgc
+      181 atccgggtca actttagtcc gttgaacatg cttcttgaaa acctagttct cttaaaataa
+      241 cgttttagaa gttttggtct tcagatgtct gattcgctaa atcatccatc gagttctacg
+      301 gtgcatgcag atgatggatt cgagccacca acatctccgg aagacaacaa caaaaaaccg
+      361 tctttagaac aaattaaaca ggaaagagaa gcgttgttta cggttagtta cctattagct
+      421 gcaagttttg aaaaagcgga atctgtaaaa agcggaatct gtaaaaaaaa catctaagga
+      481 ataattctga aaagaaaaag tttctaaatg ttaatcggaa tccaattttt atgaaattat
+      541 ttaaaaaaaa actaaaatta gtttctaaaa aatttttcta aagtaattgg accatgtgaa
+      601 ggtacaccca cttgttccaa tatgccatat ctaactgtaa aataatttga ttctcatgag
+      661 aatatttttc aggatctatt cgcagatcgt cgacgaagcg ctcgttctgt gattgaagaa
+      721 gctttccaaa acgaactcat gagtgctgaa ccagtccagc caaacgtgcc gaatccacat
+      781 tgtgagttgg aaatttttat ttgataacca agagaaaaaa agttctacct ttttttcaaa
+      841 aacctttcca aaaatgattc catctgatat aggattaaga aaaatatttt ccgaaatctc
+      901 tgcttttcag cgattcccat tcgtttccgt catcaaccag ttgctggacc tgctcatgat
+      961 gttttcggag acgcggtgca ttcaattttt caaaaaataa tgtccaggta tacactattt
+     1021 ttgcatattt ttcttgccaa atttggtcaa aaaccgtagt acaacccaaa aagtttcttc
+     1081 atttcagagg agtgaacgcg gattatagtc attggatgtc atattggatc gcgttgggaa
+     1141 tcgacaaaaa aacacaaatg aactatcata tgaaaccgtt ttgcaaagat acttatgcaa
+     1201 ctgaaggctc cttaggtagg ttagtctttt ctaggcacag aagagtgaga aaattctaaa
+     1261 tttctgagca gtctgctttt tgttttcctt gagtttttac ttaaagctct taaaagaaat
+     1321 ctaggcgtga agttcgagcc ttgtaccata ccacaacagc attccaaatg ttacagaagc
+     1381 gaaacaaaca tttactgata aaatcaggtc agctgttgag gaaattatct ggaagtccgc
+     1441 tgaatattgt gatattctta gcgagaagtg gacaggaatt catgtgtcgg ccgaccaact
+     1501 gaaaggtcaa agaaataagc aagaagatcg ttttgtggct tatccaaatg gacaatacat
+     1561 gaatcgtgga caggttagtg cgaatcgggg actcaagatt tactgaaata gtgaagagaa
+     1621 aacaaaagaa aactatattt tcaaaaaaaa tgagaactct aataaacaga atgaaaaaca
+     1681 ttcaaagcta cagtagtatt tccagctgga gtttccagag ccaaaaaaat gcgagtatta
+     1741 ctgtagtttt gaaattggtt tctcacttta cgtacgattt tttgattttt ttttcagact
+     1801 cttcatatga aaaaaaatca tgttttctcc tttacaagat ttttttgatc tcaaaacatt
+     1861 tccagagtga catttcactt cttgcggtgt tcgatgggca tggcggacac gagtgctctc
+     1921 aatatgcagc tgctcatttc tgggaagcat ggtccgatgc tcaacatcat cattcacaag
+     1981 atatgaaact tgacgaactc ctagaaaagg ctctagaaac attggacgaa agaatgacag
+     2041 tcagaagtgt tcgagaatct tggaaaggtg gaaccactgc tgtctgctgt gctgttgatt
+     2101 tgaacactaa tcaaatcgca tttgcctggc ttggagattc accagggtaa tcaatttttt
+     2161 tttagttttt ggaactttac gtcccgaaaa attattcctt tatcacctaa ttcctacagt
+     2221 aacccaagct ccgaattaaa taaagttaaa gcgtggtata cacataaaaa taagaaaaaa
+     2281 ttgttcatga aatccatttt tccagttaca tcatgtcaaa cttggagttc cgcaaattca
+     2341 ctactgaaca ctccccgtct gacccggagg aatgtcgacg agtcgaagaa gtcggtggcc
+     2401 agatttttgt gatcggtggt gagctccgtg tgaatggagt actcaacctg acgcgagcac
+     2461 taggagacgt acctggaaga ccaatgatat ccaacaaacc tgatacctta ctgaagacga
+     2521 tcgaacctgc ggattatctt gttttgttgg cctgtgacgg gatttctgac gtcttcaaca
+     2581 ctagtgattt gtacaatttg gttcaggctt ttgtcaatga atatgacgta gaaggtatca
+     2641 aactgatcgt ttttcacatc acaaaattct tgaattttcc agattatcac gaacttgcac
+     2701 gctacatttg caatcaagca gtttcagctg gaagtgctga caatgtgaca gtagttatag
+     2761 gtttcctccg tccaccagaa gacgtttggc gtgtaatgaa aacagactcg gatgatgaag
+     2821 agagcgagct cgaggaagaa gatgacaatg aatagtttat tgcaagtttt ccaaaacttt
+     2881 tccaatttcc ctgggtattg attagcatcc atatcttacg gcgattatat caattgtaac
+     2941 attatttctg tttctccccc cacctctcaa attttcaaat gacccttttt cttttcgtct
+     3001 acctgtatcg ttttccattc atctcccccc ctccactgtg gtatatcatt ttgtcattag
+     3061 aaagtattat tttgattttc attggcagta gaagacaaca ggatacagaa gaggttttca
+     3121 cag
+//
+LOCUS       AF054982                3766 bp    DNA     linear   INV 30-MAR-2006
+DEFINITION  Caenorhabditis briggsae putative PP2C protein phosphatase FEM-2
+            (fem-2) gene, complete cds.
+ACCESSION   AF054982
+VERSION     AF054982.1
+KEYWORDS    .
+SOURCE      Caenorhabditis briggsae
+  ORGANISM  Caenorhabditis briggsae
+            Eukaryota; Metazoa; Ecdysozoa; Nematoda; Chromadorea; Rhabditida;
+            Rhabditina; Rhabditomorpha; Rhabditoidea; Rhabditidae; Peloderinae;
+            Caenorhabditis.
+REFERENCE   1  (bases 1 to 3766)
+  AUTHORS   Hansen,D. and Pilgrim,D.
+  TITLE     Molecular evolution of a sex determination protein. FEM-2 (pp2c) in
+            Caenorhabditis
+  JOURNAL   Genetics 149 (3), 1353-1362 (1998)
+   PUBMED   9649525
+REFERENCE   2  (bases 1 to 3766)
+  AUTHORS   Stothard,P. and Pilgrim,D.
+  TITLE     Conspecific and interspecific interactions between the FEM-2 and
+            the FEM-3 sex-determining proteins despite rapid sequence
+            divergence
+  JOURNAL   J. Mol. Evol. 62 (3), 281-291 (2006)
+   PUBMED   16477523
+REFERENCE   3  (bases 1 to 3766)
+  AUTHORS   Hansen,D. and Pilgrim,D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-MAR-1998) Department of Biological Sciences,
+            University of Alberta, Edmonton, AB T6G-2E9, Canada
+FEATURES             Location/Qualifiers
+     source          1..3766
+                     /organism="Caenorhabditis briggsae"
+                     /mol_type="genomic DNA"
+                     /strain="AF16"
+                     /db_xref="taxon:6238"
+                     /note="obtained from genomic mini-library screened with
+                     Caenorhabditis elegans fem-2 sequence"
+     gene            <415..>3405
+                     /gene="fem-2"
+     mRNA            join(<415..609,1482..1693,1749..1876,1946..2423,
+                     2471..2799,3239..>3405)
+                     /gene="fem-2"
+                     /product="putative PP2C protein phosphatase FEM-2"
+     CDS             join(415..609,1482..1693,1749..1876,1946..2423,2471..2799,
+                     3239..3405)
+                     /gene="fem-2"
+                     /note="possible sex determination protein"
+                     /codon_start=1
+                     /product="putative PP2C protein phosphatase FEM-2"
+                     /protein_id="AAC08602.1"
+                     /translation="MSGPPPPKTNEKSSQPVTGRSQEPTRKGQLGPNYLRIIEEDEEY
+                     GHALLEPSEEQIKFEREALFEDLHLDRQRSARSFIEETFEEEMLGPQNGIPPTTESPQ
+                     SYIPIRYRNPPAAAPVHDVFGDAVHAIFQKLMTRGPPVEYCHWMSYWIAKQIDKDSPV
+                     KYHECRFTPDQYVTENTAEAKKTYMDNMWKAAEKNLWMYTYNSPLLRTKWTGIHVSAE
+                     QIKGQRHKQEDRFVAYPNSLYMDTSRSDHIALLGVFDGHGGHECSQYAAGHMWETWIE
+                     TRASHFEEPLEKQLKTSLDLLDERMTVRSTKECWKGGTTAVCCAIDMNKKELAFAWLG
+                     DSPGYIMDNLEVRKVTRDHSPSDPEEGRRVEEAGGQLFVIGGELRVNGVLNLTRALGD
+                     VPGRPMISNQAETCQRDIEVGDYLVILACDGISDVFNTSDLYNLVQAYVNENPVEEYN
+                     DLAHYICHEAIAHGSTDNVTVVIGFLRPPQDLWRMMKIDEESDEEEDEVDDE"
+ORIGIN      
+        1 tctagagatg ctagcgatca ttttcatacc gagaaatcaa aattttgttc agataatccc
+       61 actaaattca cataaataaa tttgttatct acagtatccg ttttgctccg tcccctcgta
+      121 aatcgacacg agcgctgtct ccgagatttc aggtgtcact attttaatcc gacaatattt
+      181 ttggctccct gaacattttt tatgtgtaaa taaaaaattt tgtttttttg aatctacaat
+      241 agaagaattt ggagagaaaa atcgaaattt ttagtgaaac tgatggtttc aaatattcag
+      301 aaaaagagaa tctgcattag aaattttctt tttttcattt ttgttttttg ctattcttca
+      361 ttccatcctt gcaatacttt gtaaatcacc tttttcgaaa tctcaccttt tcagatgtcc
+      421 ggcccaccac cacccaaaac taacgagaaa tcatcacaac cggtcaccgg acgatcacaa
+      481 gagcctacgc gtaaaggtca acttggaccc aattacttgc gtataattga agaggacgaa
+      541 gaatatgggc atgctctttt ggagccaagt gaggagcaga tcaaattcga aagagaagca
+      601 ctttttgagg tatacaaata attatggatt aagcataatc actaaaagtt tcgcaaacct
+      661 tatcgtctga gtgacccagt tttatcactg tttctgtgga agatatgcga taaaaactac
+      721 cgtaaacact actagaacgc caccagaacc gtccactttg agcctatata tctcactttt
+      781 ttcaaaagat atcaaaaaat tgtcaactaa caaaatgttt gctcatgtgt cgcaacttta
+      841 attagttgac cacttgttga tatcttttac aggaaatgag atacatgggc tcgaatatat
+      901 gattccgatg gtgttctttt agagtgttta cggcatactg cgaccgcgta tttgccgggc
+      961 cccttcgtca tagtttcttt ttgaatcaat atttttagat taactaaatt agatatgata
+     1021 aaactcggcg agtactacaa aatgatacta tttggaaaac agtgtcttgt ctataacaaa
+     1081 gtaacaagtc ataaagtggc cagacgaggc ctctgttttt ttgtctgtaa ctttgttcat
+     1141 agacaagaca cagtcctcca aataatatca ttatgtagca ctcgtcgagt tctttcatat
+     1201 ctaagtgagt tggtctgaaa attttgattc taaaagaaac tatggcagat gaaggcttgt
+     1261 ttcgaagtat ggtttacggt attgaaaaat tataactcct gtgtttcaag ataaattcaa
+     1321 cggtctaaaa atcctaattg tgatgaaatt aaacttcgaa agaaaaatgt ttacaatttt
+     1381 cgaaaaactg aaaattagag caaaattaac tgaaattttc ttcctgtctg aaaattaaaa
+     1441 ctccaagttt tttgttgctc ttttcaaata caagtttcca ggatctccac ttggaccgtc
+     1501 aacgaagtgc ccgttcattc attgaagaga ctttcgagga ggagatgctt ggaccccaaa
+     1561 atggcattcc acccactaca gaatctccac agtcatacat tcccatccga taccgtaatc
+     1621 caccagcagc tgcaccggtt catgacgttt tcggagatgc tgtacatgca atttttcaaa
+     1681 agttgatgac tcggtaaaag tttgaaatta gagaggaaaa agtttaggat tttacaaaat
+     1741 gttttcagag gtccacctgt cgagtactgt cactggatgt cctattggat tgccaagcag
+     1801 attgataagg atagtccagt gaagtatcat gagtgtcgtt ttactcctga ccaatacgtg
+     1861 acggagaata ctgcaggtat gcttgtatca tccagataac cacggggatc cttggaacat
+     1921 ggaatctaat gtttcgtttt cacagaagcc aagaagactt acatggacaa tatgtggaag
+     1981 gcagcagaaa agaatttatg gatgtacacc tacaactctc cactccttcg cacaaaatgg
+     2041 actggaattc acgtgtctgc tgaacaaata aaaggacaac gtcacaaaca ggaggatcga
+     2101 tttgtcgcct atccgaatag cttgtacatg gatacgtctc gttcggacca tattgctctt
+     2161 ttgggtgttt tcgatggtca tggaggccac gagtgctccc aatacgctgc tgggcatatg
+     2221 tgggagacgt ggattgagac acgagcctcg cacttcgagg agccacttga gaagcaactg
+     2281 aagacttcgt tggatcttct ggatgagcgt atgactgtaa gaagtacgaa ggaatgctgg
+     2341 aagggaggta ccacggctgt ctgttgtgca attgatatga ataagaagga gttggcattt
+     2401 gcttggttgg gagattcacc agggtatgaa aataggagtt ttatattttt taaaaactgg
+     2461 aaaatctcag ctacattatg gataatctgg aagttcgcaa agtgacacgc gatcactctc
+     2521 catcagatcc cgaagaaggt cgtcgcgtcg aagaggctgg tggtcaactg tttgtgattg
+     2581 gtggagagct tcgagtgaat ggtgtgctca atctgacacg tgcactagga gatgtccctg
+     2641 gccgaccgat gatctcgaat caagcggaaa cgtgtcagcg agatattgaa gtaggcgact
+     2701 atctggtaat tcttgcttgc gatggaatat cggatgtctt caacacaagt gatttgtaca
+     2761 atttagtgca ggcctatgtc aatgaaaatc ctgtagaagg tgagagctca ttttagaaaa
+     2821 aaagtacgaa atcttaaagg attttatgaa ttctaaaaat gcttaaaatt gcttactaga
+     2881 aggaattcta cagaaaactt gaacgtgaga aaatttgtaa tcagtttttg tgttcgatct
+     2941 gaaaattgga aacttgttca actaagcgag agctgttata tttatgcttg aactctgttt
+     3001 tttttgtata ttactgaaag tgttggagca gtcaaacaac tgtaacttac atccttagtg
+     3061 ctagactttt gtcaaagaaa atcaaatttt tcaattttaa ttgaaaagtt ttgaaacact
+     3121 taccattaga gaagttctta taacttttga ccgaaaaagt caaaaagagt attttcaact
+     3181 agagccaata gtgataaagt caagactgat taaaacctca aaatttattt atttccagaa
+     3241 tataacgact tggctcatta catctgccac gaagcgattg ctcatggaag tacggacaat
+     3301 gtgacagtcg tcattggatt cctccgtcca ccacaagatc tctggcgcat gatgaaaatc
+     3361 gacgaagagt cagacgaaga agaagacgag gttgatgatg aatagaattc cactgctttc
+     3421 ttgtttccaa actgtatata ttttttcttt gactcttctt ataactttat ttgaaaatcc
+     3481 tttcttttct cccgtctaga tttgttttgt ataggcgttg gtatcaattt tctatcaatc
+     3541 atccacacca tatctatttg aactttatta cagtaacttc agagctcgaa aacatttcga
+     3601 agtttttttt tgtgttccta tcttttacgt atagcatttc cttatcttcc gaattttggc
+     3661 ttaagtacag gcttaggaaa atccttaata actttgttca aataagagat ttgggcctga
+     3721 aacttttgga cgtaacttga aattgaatgt agaacgttcc tatgac
+//
+LOCUS       AF507019                1796 bp    mRNA    linear   INV 30-MAR-2006
+DEFINITION  Caenorhabditis remanei putative protein phosphatase FEM-2 (fem-2)
+            mRNA, complete cds.
+ACCESSION   AF507019
+VERSION     AF507019.1
+KEYWORDS    .
+SOURCE      Caenorhabditis remanei
+  ORGANISM  Caenorhabditis remanei
+            Eukaryota; Metazoa; Ecdysozoa; Nematoda; Chromadorea; Rhabditida;
+            Rhabditina; Rhabditomorpha; Rhabditoidea; Rhabditidae; Peloderinae;
+            Caenorhabditis.
+REFERENCE   1  (bases 1 to 1796)
+  AUTHORS   Stothard,P. and Pilgrim,D.
+  TITLE     Conspecific and interspecific interactions between the FEM-2 and
+            the FEM-3 sex-determining proteins despite rapid sequence
+            divergence
+  JOURNAL   J. Mol. Evol. 62 (3), 281-291 (2006)
+   PUBMED   16477523
+REFERENCE   2  (bases 1 to 1796)
+  AUTHORS   Stothard,P.M. and Pilgrim,D.
+  TITLE     Isolation of protein phosphatase type 2C (PP2C) sequences from
+            nematodes
+  JOURNAL   Unpublished
+REFERENCE   3  (bases 1 to 1796)
+  AUTHORS   Stothard,P.M. and Pilgrim,D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (29-APR-2002) Biological Sciences, University of Alberta,
+            Edmonton, AB T6G-2E9, Canada
+FEATURES             Location/Qualifiers
+     source          1..1796
+                     /organism="Caenorhabditis remanei"
+                     /mol_type="mRNA"
+                     /strain="SB146"
+                     /db_xref="taxon:31234"
+     gene            1..1796
+                     /gene="fem-2"
+     CDS             1..1467
+                     /gene="fem-2"
+                     /note="type 2C phosphatase; possible sex-determining
+                     protein"
+                     /codon_start=1
+                     /product="putative protein phosphatase FEM-2"
+                     /protein_id="AAM33404.1"
+                     /translation="MSDPPVEKTSPEKTEGSSSGSFRVPLESDKLGDPDFKPCVAQIT
+                     MERNAVFEDNFLDRRQSARAVIEYCFEDEMQNLVEGRPAVSEEPVVPIRFRRPPPSGP
+                     AHDVFGDAMNEIFQKLMMKGQCADFCHWMAYWLTKEQDDANDGFFGNIRYNPDVYVTE
+                     GTTETKKAFVDSMWPTAQRILLKSVRNSTILRTKWTGIHVSADQLKGQRPKQEDRFVA
+                     YPNSQYMNRTQDPVALLGVFDGHGGHECSQYAASHFWEAWLETRQTSDGDELQNQLKK
+                     SLELLDQRLTVRSVKEYWKGGTTAACCAIDKENKTMAFAWLGDSPGYVMNNMEFRKVT
+                     REHSPSDPEEARRVEEAGGQLFVIGGELRVNGVLNLTRALGDVPGRPMISNEPEICER
+                     PIEQGDYMVFLACDGVSDVLNTADLYNLVGEFVRTFPVEDYSEMARWFCHKSITAGSA
+                     DNVTVVIGFLRPPQDIWNLMSRSSDDESDEEEEDEDDD"
+     misc_feature    1
+                     /gene="fem-2"
+                     /note="SL1 splice site"
+ORIGIN      
+        1 atgtccgacc caccggtcga aaaaacaagt ccagagaaga cagagggctc ttcatccggc
+       61 agttttcgcg tcccactcga atccgacaag cttggtgacc cggatttcaa gccatgcgtt
+      121 gcacaaatca caatggagag aaacgcagtg ttcgaggaca acttcctcga tcggagacag
+      181 agtgctcgcg ccgtaatcga gtattgcttt gaggacgaaa tgcaaaactt ggttgaaggg
+      241 cgacctgctg tttcagaaga accagttgtt cccatacgat tccgacgccc accaccgtcc
+      301 ggacctgctc acgacgtctt tggcgacgcc atgaacgaaa ttttccagaa attaatgatg
+      361 aaaggtcaat gcgcagactt ctgccactgg atggcttatt ggctaacaaa ggaacaagat
+      421 gatgcgaatg atggattttt tggcaatatt cgctataatc cagatgtcta tgtcacggaa
+      481 ggcacaacag aaaccaaaaa ggcgttcgtc gacagcatgt ggccgactgc tcagcgaatt
+      541 cttctgaaat ccgtccggaa cagcacgatt ttacgcacaa agtggactgg aatccacgtg
+      601 tcagcggatc agttgaaggg gcaacgcccg aagcaagaag atagattcgt agcttatccg
+      661 aatagtcagt atatgaatcg gacgcaggat cccgtcgccc ttctcggtgt gttcgatggt
+      721 catggcggac acgagtgctc acaatacgcg gcctctcact tctgggaggc atggctggag
+      781 actcgacaaa ctagcgacgg tgatgagctc cagaatcagc tgaagaagtc acttgagttg
+      841 ttggatcaac gattgacagt cagaagtgtg aaggaatact ggaagggtgg cactacggcg
+      901 gcgtgttgcg ctatcgataa ggagaacaaa acgatggcgt tcgcgtggtt gggcgattca
+      961 ccaggatacg tcatgaacaa catggaattc cgcaaagtga cacgcgagca ctcgccgtcc
+     1021 gatccagaag aagcgcgtcg agtcgaagaa gccggcggac aactattcgt gatcggtggc
+     1081 gagttgcgag tcaacggagt gctcaacctg acgcgtgctc tcggcgacgt tcccggacga
+     1141 ccgatgatat caaatgagcc ggagatatgc gagagaccga ttgagcaagg cgactatatg
+     1201 gtgtttttgg cgtgtgatgg tgtatcggac gtgttgaaca ctgccgattt atacaatttg
+     1261 gttggcgagt ttgtcagaac atttcctgtt gaagactact cggaaatggc tcgctggttt
+     1321 tgtcacaaat cgatcaccgc tggaagtgcc gacaacgtga cagtcgtcat tggattcctt
+     1381 cgtccaccac aagacatctg gaatctcatg agtcgtagct cggatgatga gtctgatgaa
+     1441 gaagaagagg atgaggacga cgattgaacg acgacgcctc ttccctgtac attaatatat
+     1501 tttctcgttt tccaaacccc tcgtatagct ttttctcgtt ttctcccctc cctatctctt
+     1561 atacaatttt gggtaaacct cctttcccat atctatcaaa ttgtttcttt tttccccttt
+     1621 cggataacac ctcacccacg aaatgtatca ttgtttctca cctccctaac ttccggatgt
+     1681 ccctattccc tcggtttctt gtagcatttc atttcatctc cccgtattat ttttcaatta
+     1741 tatatatata gacatgtatg aactgttaaa tttaaaaaaa aaaaaaaaaa aaaaaa
+//
