@@ -910,6 +910,8 @@ The following was generated using the `-s` option, which causes the sequences of
 
 ## Sample EMBL input
 
+The following was generated using the `-s` option, which causes the sequences of features to be included:
+
 ```text
 ID   AF177870; SV 1; linear; genomic DNA; STD; INV; 3123 BP.
 XX

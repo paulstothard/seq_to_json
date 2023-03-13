@@ -400,6 +400,9 @@ if __name__ == "__main__":
                 "does not match actual sequence length " + \
                 str(len(seq_record['sequence'])) + \
                 " for sequence: '" + seq_record['name'] + "'."
+        if seq_record['sequence']:
+            assert seq_record['type'] == 'dna' or seq_record['type'] == 'protein', "Sequence type is not DNA or protein for sequence: '" + \
+                seq_record['name'] + "'."
         for feature in seq_record['features']:
             if feature['feature_start'] and feature['feature_end']:
                 assert int(feature['feature_end']) >= int(feature['feature_start']), "Feature end " + feature['feature_end'] + " is less than feature start " + \
