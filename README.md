@@ -1,17 +1,15 @@
 # seq_to_json
-Extracts feature information from GenBank and EMBL files and converts to JSON.
-
-Designed to parse poorly formatted GenBank and EMBL files.
+Converts a raw, FASTA, GenBank, or EMBL file to an easy-to-parse JSON file. Feature information is included in the output from GenBank and EMBL files.
 
 ## Usage
 
 ```
 usage: seq_to_json.py [-h] [-o OUTPUT] [-s] input
 
-Extracts feature information from GenBank and EMBL files and converts to JSON
+Converts a raw, FASTA, GenBank, or EMBL file to an easy-to-parse JSON file.
 
 positional arguments:
-  input                 GenBank or EMBL file to parse
+  input                 Raw, FASTA, GenBank, or EMBL file to parse
 
 options:
   -h, --help            show this help message and exit
@@ -19,7 +17,7 @@ options:
                         JSON file to create, otherwise write to stdout
   -s, --sequence        include the sequence of features in the output
 
-python seq_to_json.py input.gb
+python seq_to_json.py input
 ```
 
 ## Example usage
@@ -44,11 +42,19 @@ python seq_to_json.py sequence.gbk -s
 
 ## Notes
 
-* GenBank and EMBL files containing one or more records are supported.
-* The `-s` option computes the sequence of each feature, using the supplied feature locations and the overall sequence.
+* Supplied FASTA, GenBank, and EMBL files can contain multiple sequence records.
+* For GenBank and EMBL files the `-s` option computes the sequence of each feature, using the supplied feature locations and the overall sequence.
 * The script exits with a non-zero exit code if the sequence length for a record cannot be determined or if other anomalies are detected.
 
-## Sample input
+## Sample raw input
+
+## Sample raw output
+
+## Sample FASTA input
+
+## Sample FASTA output
+
+## Sample GenBank input
 
 ```text
 LOCUS       AF177870                3123 bp    DNA     linear   INV 30-MAR-2006
@@ -376,7 +382,7 @@ ORIGIN
 //
 ```
 
-## Sample output
+## Sample GenBank output
 
 The following was generated using the `-s` option, which causes the sequences of features to be included:
 
@@ -829,3 +835,7 @@ The following was generated using the `-s` option, which causes the sequences of
     }
 ]
 ```
+
+## Sample EMBL input
+
+## Sample EMBL output

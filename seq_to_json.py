@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 """\
-This script extracts feature information from GenBank and EMBL files and converts to JSON
+Converts a raw, FASTA, GenBank, or EMBL file to an easy-to-parse JSON file. Feature information is included in the output from GenBank and EMBL files.
 
-Usage: python seq_to_json.py input.gb
+Usage: python seq_to_json.py input
 
 Author: Paul Stothard
 """
@@ -318,8 +318,8 @@ def get_features(sequence_record_text):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        prog='seq_to_json.py', description='Extracts feature information from GenBank and EMBL files and converts to JSON', epilog='python seq_to_json.py input.gb')
-    parser.add_argument('input', help='GenBank or EMBL file to parse')
+        prog='seq_to_json.py', description='Converts a raw, FASTA, GenBank, or EMBL file to an easy-to-parse JSON file.', epilog='python seq_to_json.py input')
+    parser.add_argument('input', help='Raw, FASTA, GenBank, or EMBL file to parse')
     parser.add_argument('-o', '--output', type=str,
                         help='JSON file to create, otherwise write to stdout')
     parser.add_argument('-s', '--sequence', action='store_true',
