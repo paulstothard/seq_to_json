@@ -92,9 +92,8 @@ def is_parsable_feature_range(feature_range_text):
         return False
     return True
 
+
 # parse text into array of sequence records by splitting on //
-
-
 def get_seq_records(sequence_file_text):
     records = []
     for record_text in filter(is_sequence_record, re.split(r'^\/\/', sequence_file_text, flags=re.MULTILINE)):
@@ -104,8 +103,6 @@ def get_seq_records(sequence_file_text):
         record['sequence'] = get_seq(record_text)
         record['features'] = get_features(record_text)
         records.append(record)
-    if (len(records) == 0):
-        sys.exit("No sequence records found in file")
     return records
 
 
@@ -316,10 +313,43 @@ def get_features(sequence_record_text):
     return features
 
 
+def get_seq_records_from_fasta(sequence_file_text):
+    records = []
+    for record_text in filter(is_sequence_record, re.split(r'^\s*>', sequence_file_text, flags=re.MULTILINE)):
+        record = {}
+        m = re.search(r'^\s*([^\n\r]+)(.*)', record_text, flags=re.DOTALL)
+        if m:
+            record['name'] = m.group(1)
+            record['sequence'] = remove_whitespace(remove_digits(m.group(2)))
+            record['length'] = len(record['sequence'])
+        else:
+            record['name'] = ""
+            record['sequence'] = ""
+            record['length'] = ""
+        record['features'] = []
+        records.append(record)
+    return records
+
+
+def get_seq_record_from_raw(sequence_file_text):
+    record = {}
+    record['name'] = ""
+    record['sequence'] = remove_whitespace(remove_digits(sequence_file_text))
+    record['length'] = len(record['sequence'])
+    record['features'] = []
+    return [record]
+
+
+def get_proportion_nucleotide_in_string(sequence):
+    char = ['A', 'C', 'G', 'T', 'U', 'N', '-', '.']
+    return sum(map(lambda x: sequence.upper().count(x), char)) / len(sequence)
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         prog='seq_to_json.py', description='Converts a raw, FASTA, GenBank, or EMBL file to an easy-to-parse JSON file.', epilog='python seq_to_json.py input')
-    parser.add_argument('input', help='Raw, FASTA, GenBank, or EMBL file to parse')
+    parser.add_argument(
+        'input', help='Raw, FASTA, GenBank, or EMBL file to parse')
     parser.add_argument('-o', '--output', type=str,
                         help='JSON file to create, otherwise write to stdout')
     parser.add_argument('-s', '--sequence', action='store_true',
@@ -329,6 +359,20 @@ if __name__ == "__main__":
     text_string = Path(args.input).read_text()
 
     seq_records = get_seq_records(text_string)
+
+    # if unable to parse as GenBank or EMBL, try parsing as FASTA then raw
+    if (len(seq_records) == 0) or (seq_records[0]['name'] == "" and seq_records[0]['length'] == "" and seq_records[0]['sequence'] == ""):
+        m = re.search(r'^\s*>', text_string)
+        if m:
+            seq_records = get_seq_records_from_fasta(text_string)
+        else:
+            seq_records = get_seq_record_from_raw(text_string)
+
+    # try to determine whether the sequence in each record is DNA or protein
+    for seq_record in seq_records:
+        if seq_record['sequence']:
+            seq_record['type'] = 'dna' if get_proportion_nucleotide_in_string(
+                seq_record['sequence']) > 0.9 else 'protein'
 
     if args.sequence:
         add_feature_sequences(seq_records)

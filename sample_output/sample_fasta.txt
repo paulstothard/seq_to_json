@@ -1,0 +1,23 @@
+[
+    {
+        "name": "random sequence 1 consisting of 100 bases.",
+        "sequence": "caggaaagactaacgttctggtcatagatctatggtgtagatgtcaccgtgtccaccatgcggcaaacaacgattttcgtagcaatgaacaaccgcaagc",
+        "length": 100,
+        "features": [],
+        "type": "dna"
+    },
+    {
+        "name": "random sequence 2 consisting of 100 bases.",
+        "sequence": "ggtaaagtgctcgttagtttctataggccctggcattactgatagacctcgtcctccctatctgttcctaggaacggcccatctctcagccactggtgcc",
+        "length": 100,
+        "features": [],
+        "type": "dna"
+    },
+    {
+        "name": "random sequence 3 consisting of 100 bases.",
+        "sequence": "ccgtttacgtcgttcggaagttctcagctcatcatacaaggtggctacatgctctctatgtcgtaatccgacgcaaatgcagaccatggaagtacgaatg",
+        "length": 100,
+        "features": [],
+        "type": "dna"
+    }
+]

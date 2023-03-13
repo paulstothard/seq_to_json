@@ -126,7 +126,8 @@
                 ],
                 "feature_sequence": "ccgcttcgtctggccagtcacccgtgacggcaaggtgcaccttactccggctcagttatccatgcttcttgaaggtatcaactggaagcacccgaaacgaacggaacgcgctggaatccgcatataa"
             }
-        ]
+        ],
+        "type": "dna"
     },
     {
         "name": "QEXN01000146;",
@@ -255,7 +256,8 @@
                 ],
                 "feature_sequence": "caatttgttccattgccccaaagattggctgtacaccggagactctgcgtgtctgggtacgccagcatgagcgggataccggaggcggtgatggcgggctccccaccgctgaacggcagcggctgaaagagctgggacgtgaaaatcgtgaactgcgccgcagtaacgatatccttcgccaggcttccgcttattttgcgaaggcggagttcgaccgcctct"
             }
-        ]
+        ],
+        "type": "dna"
     },
     {
         "name": "QEXN01000147;",
@@ -316,6 +318,7 @@
                 ],
                 "feature_sequence": "tcagctaaacaacagaccgagaaagacactgaagttcaaaacaccgaaagagataattgaaaggggtgttgcattgacagattgaatctacagtagccttttttaatatcgtattttgttcctccagtcggcgaacctgcttttccagctcgcgaatacgttgctgttcaggggtaatgggtgttgcagagggcgcaataccttggc"
             }
-        ]
+        ],
+        "type": "dna"
     }
 ]

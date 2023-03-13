@@ -1,0 +1,11 @@
+>random sequence 1 consisting of 100 bases.
+caggaaagactaacgttctggtcatagatctatggtgtagatgtcaccgtgtccaccatg
+cggcaaacaacgattttcgtagcaatgaacaaccgcaagc
+
+>random sequence 2 consisting of 100 bases.
+ggtaaagtgctcgttagtttctataggccctggcattactgatagacctcgtcctcccta
+tctgttcctaggaacggcccatctctcagccactggtgcc
+
+>random sequence 3 consisting of 100 bases.
+ccgtttacgtcgttcggaagttctcagctcatcatacaaggtggctacatgctctctatg
+tcgtaatccgacgcaaatgcagaccatggaagtacgaatg
