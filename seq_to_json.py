@@ -13,8 +13,22 @@ import sys
 from pathlib import Path
 
 
+def is_text_file(filename):
+    with open(filename, mode='rb') as f:
+        try:
+            f.read().decode('utf-8')
+        except UnicodeDecodeError:
+            return False
+    return True
+
+
 def eprint(*args, **kwargs):
     print(*args, file=sys.stderr, **kwargs)
+
+
+def eprint_exit(*args, **kwargs):
+    print(*args, file=sys.stderr, **kwargs)
+    sys.exit(1)
 
 
 def remove_whitespace(string):
@@ -98,6 +112,13 @@ def get_seq_records(sequence_file_text):
     records = []
     for record_text in filter(is_sequence_record, re.split(r'^\/\/', sequence_file_text, flags=re.MULTILINE)):
         record = {}
+        record['input_type'] = ""
+        m = re.search(r'^\s*LOCUS|^\s*FEATURES',
+                      record_text, flags=re.MULTILINE)
+        if m:
+            record['input_type'] = 'genbank'
+        elif re.search(r'^\s*ID|^\s*FH   Key', record_text, flags=re.MULTILINE):
+            record['input_type'] = 'embl'
         record['name'] = get_seq_name(record_text)
         record['length'] = get_seq_length(record_text)
         record['sequence'] = get_seq(record_text)
@@ -317,6 +338,7 @@ def get_seq_records_from_fasta(sequence_file_text):
     records = []
     for record_text in filter(is_sequence_record, re.split(r'^\s*>', sequence_file_text, flags=re.MULTILINE)):
         record = {}
+        record['input_type'] = "fasta"
         m = re.search(r'^\s*([^\n\r]+)(.*)', record_text, flags=re.DOTALL)
         if m:
             record['name'] = m.group(1)
@@ -333,6 +355,7 @@ def get_seq_records_from_fasta(sequence_file_text):
 
 def get_seq_record_from_raw(sequence_file_text):
     record = {}
+    record['input_type'] = "raw"
     record['name'] = ""
     record['sequence'] = remove_whitespace(remove_digits(sequence_file_text))
     record['length'] = len(record['sequence'])
@@ -340,15 +363,32 @@ def get_seq_record_from_raw(sequence_file_text):
     return [record]
 
 
-def get_proportion_nucleotide_in_string(sequence):
-    char = ['A', 'C', 'G', 'T', 'U', 'N', '-', '.']
-    return sum(map(lambda x: sequence.upper().count(x), char)) / len(sequence)
+def get_count_all_nucleotide_in_string(sequence):
+    char = ['A', 'C', 'G', 'T', 'U', 'R', 'Y', 'S', 'W',
+            'K', 'M', 'B', 'D', 'H', 'V', 'N', '-', '.']
+    return sum(map(lambda x: sequence.upper().count(x), char))
 
 
-def get_proportion_aa_in_string(sequence):
+def get_count_all_aa_in_string(sequence):
+    char = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
+            'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'Y', 'Z', '*', '-', '.']
+    return sum(map(lambda x: sequence.upper().count(x), char))
+
+
+def get_count_common_nucleotide_in_string(sequence):
+    char = ['A', 'C', 'G', 'T']
+    return sum(map(lambda x: sequence.upper().count(x), char))
+
+
+def get_count_common_aa_in_string(sequence):
     char = ['A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M',
-            'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'Y', '-', '.']
-    return sum(map(lambda x: sequence.upper().count(x), char)) / len(sequence)
+            'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'Y']
+    return sum(map(lambda x: sequence.upper().count(x), char))
+
+
+def exit_if_false(boolean, message):
+    if not boolean:
+        eprint_exit(message)
 
 
 if __name__ == "__main__":
@@ -361,6 +401,9 @@ if __name__ == "__main__":
     parser.add_argument('-s', '--sequence', action='store_true',
                         help='include the sequence of features in the output', default=False)
     args = parser.parse_args()
+
+    if not is_text_file(args.input):
+        eprint_exit("Input file '" + args.input + "' is not a text file.")
 
     text_string = Path(args.input).read_text()
 
@@ -375,78 +418,92 @@ if __name__ == "__main__":
             seq_records = get_seq_record_from_raw(text_string)
 
     # try to determine whether the sequence in each record is DNA or protein
+    # and whether there are unexpected characters in sequence
     for seq_record in seq_records:
         if seq_record['sequence']:
-            if get_proportion_nucleotide_in_string(seq_record['sequence']) > 0.9:
+            ccn = get_count_common_nucleotide_in_string(seq_record['sequence'])
+            cca = get_count_common_aa_in_string(seq_record['sequence'])
+            can = get_count_all_nucleotide_in_string(seq_record['sequence'])
+            caa = get_count_all_aa_in_string(seq_record['sequence'])
+            if ccn / len(seq_record['sequence']) > 0.9:
                 seq_record['type'] = 'dna'
-            elif get_proportion_aa_in_string(seq_record['sequence']) > 0.9:
+            elif cca / len(seq_record['sequence']) > 0.9:
                 seq_record['type'] = 'protein'
             else:
                 seq_record['type'] = 'unknown'
+
+            if can != len(seq_record['sequence']) and caa != len(seq_record['sequence']):
+                seq_record['unexpected_characters_in_sequence'] = True
+            else:
+                seq_record['unexpected_characters_in_sequence'] = False
 
     if args.sequence:
         add_feature_sequences(seq_records)
 
     add_overall_feature_start_and_end(seq_records)
 
-    # run sanity checks on the results
+    # run various sanity checks on the results
     for seq_record in seq_records:
-        assert seq_record['length'] or seq_record['sequence'], "Sequence length and sequence are both missing for sequence: '" + \
-            seq_record['name'] + "'."
+        exit_if_false(seq_record['length'] or seq_record['sequence'], "Sequence length and sequence are both missing for sequence: '" +
+                      seq_record['name'] + "'.")
         if not seq_record['length'] and seq_record['sequence']:
             seq_record['length'] = len(seq_record['sequence'])
         if seq_record['length'] and seq_record['sequence']:
-            assert int(seq_record['length']) == len(seq_record['sequence']), "Reported sequence length " + seq_record['length'] + \
-                "does not match actual sequence length " + \
-                str(len(seq_record['sequence'])) + \
-                " for sequence: '" + seq_record['name'] + "'."
+            exit_if_false(int(seq_record['length']) == len(seq_record['sequence']), "Reported sequence length " + str(seq_record['length']) +
+                          "does not match actual sequence length " +
+                          str(len(seq_record['sequence'])) +
+                          " for sequence: '" + seq_record['name'] + "'.")
         if seq_record['sequence']:
-            assert seq_record['type'] == 'dna' or seq_record['type'] == 'protein', "Sequence type is not DNA or protein for sequence: '" + \
-                seq_record['name'] + "'."
+            exit_if_false(seq_record['type'] == 'dna' or seq_record['type'] == 'protein', "Sequence type is not DNA or protein for sequence: '" +
+                          str(seq_record['name']) + "'.")
+            exit_if_false(not seq_record['unexpected_characters_in_sequence'], "Unexpected characters in sequence for sequence: '" +
+                          str(seq_record['name']) + "'.")
         for feature in seq_record['features']:
             if feature['feature_start'] and feature['feature_end']:
-                assert int(feature['feature_end']) >= int(feature['feature_start']), "Feature end " + feature['feature_end'] + " is less than feature start " + \
-                    feature['feature_start'] + " for feature: " + \
-                    feature['feature_name'] + " in sequence: " + \
-                    seq_record['name'] + "."
+                exit_if_false(int(feature['feature_end']) >= int(feature['feature_start']), "Feature end " + str(feature['feature_end']) + " is less than feature start " +
+                              str(feature['feature_start']) + " for feature: " +
+                              str(feature['feature_name']) + " in sequence: " +
+                              str(seq_record['name']) + ".")
             if feature['feature_start'] and seq_record['length']:
-                assert int(feature['feature_start']) <= int(seq_record['length']), "Feature start " + feature['feature_start'] + " is greater than sequence length " + \
-                    seq_record['length'] + " for feature: " + feature['feature_name'] + \
-                    " in sequence: '" + seq_record['name'] + "'."
+                exit_if_false(int(feature['feature_start']) <= int(seq_record['length']), "Feature start " + str(feature['feature_start']) + " is greater than sequence length " +
+                              str(seq_record['length']) + " for feature: " + str(feature['feature_name']) +
+                              " in sequence: '" + str(seq_record['name']) + "'.")
             if feature['feature_end'] and seq_record['length']:
-                assert int(feature['feature_end']) <= int(seq_record['length']), "Feature end " + feature['feature_end'] + " is greater than sequence length " + \
-                    seq_record['length'] + " for feature: " + feature['feature_name'] + \
-                    " in sequence: '" + seq_record['name'] + "'."
+                exit_if_false(int(feature['feature_end']) <= int(seq_record['length']), "Feature end " + str(feature['feature_end']) + " is greater than sequence length " +
+                              str(seq_record['length']) + " for feature: " + str(feature['feature_name']) +
+                              " in sequence: '" + str(seq_record['name']) + "'.")
             if feature['feature_sequence'] and seq_record['length']:
-                assert len(feature['feature_sequence']) <= int(seq_record['length']), "Feature sequence " + feature['feature_sequence'] + \
-                    " is greater than sequence length " + \
-                    seq_record['length'] + " for feature: " + feature['feature_name'] + \
-                    " in sequence: '" + seq_record['name'] + "'."
+                exit_if_false(len(feature['feature_sequence']) <= int(seq_record['length']), "Feature sequence " + str(feature['feature_sequence']) +
+                              " is greater than sequence length " +
+                              str(seq_record['length']) + " for feature: " + str(feature['feature_name']) +
+                              " in sequence: '" + str(seq_record['name']) + "'.")
             if feature['feature_sequence']:
                 expected_length = sum(map(lambda dict: int(dict['feature_range_end']) - int(
                     dict['feature_range_start']) + 1, feature['feature_locations']))
-                assert len(feature['feature_sequence']) == expected_length, "Feature sequence " + feature['feature_sequence'] + " is not the expected length " + str(
-                    expected_length) + " for feature: " + feature['feature_name'] + " in sequence: '" + seq_record['name'] + "'."
+                exit_if_false(len(feature['feature_sequence']) == expected_length, "Feature sequence " + str(feature['feature_sequence']) + " is not the expected length " + str(
+                    expected_length) + " for feature: " + str(feature['feature_name']) + " in sequence: '" + str(seq_record['name']) + "'.")
             for locations in feature['feature_locations']:
                 if locations['feature_range_start'] and locations['feature_range_end']:
-                    assert int(locations['feature_range_end']) >= int(locations['feature_range_start']), "Feature range end " + locations['feature_range_end'] + \
-                        " is less than feature range start " + \
-                        locations['feature_range_start'] + " for feature: " + \
-                        feature['feature_name'] + " in sequence: " + \
-                        seq_record['name'] + "."
+                    exit_if_false(int(locations['feature_range_end']) >= int(locations['feature_range_start']), "Feature range end " + str(locations['feature_range_end']) +
+                                  " is less than feature range start " +
+                                  str(locations['feature_range_start']) + " for feature: " +
+                                  str(feature['feature_name']) + " in sequence: " +
+                                  str(seq_record['name']) + ".")
                 if locations['feature_range_start'] and seq_record['length']:
-                    assert int(locations['feature_range_start']) <= int(seq_record['length']), "Feature range start " + locations['feature_range_start'] + \
-                        " is greater than sequence length " + \
-                        seq_record['length'] + " for feature: " + feature['feature_name'] + \
-                        " in sequence: '" + seq_record['name'] + "'."
+                    exit_if_false(int(locations['feature_range_start']) <= int(seq_record['length']), "Feature range start " + str(locations['feature_range_start']) +
+                                  " is greater than sequence length " +
+                                  str(seq_record['length']) + " for feature: " + str(feature['feature_name']) +
+                                  " in sequence: '" + str(seq_record['name']) + "'.")
                 if locations['feature_range_end'] and seq_record['length']:
-                    assert int(locations['feature_range_end']) <= int(seq_record['length']), "Feature range end " + locations['feature_range_end'] + \
-                        " is greater than sequence length " + \
-                        seq_record['length'] + " for feature: " + feature['feature_name'] + \
-                        " in sequence: '" + seq_record['name'] + "'."
+                    exit_if_false(int(locations['feature_range_end']) <= int(seq_record['length']), "Feature range end " + str(locations['feature_range_end']) +
+                                  " is greater than sequence length " +
+                                  str(seq_record['length']) + " for feature: " + str(feature['feature_name']) +
+                                  " in sequence: '" + str(seq_record['name']) + "'.")
 
-    # remove 'feature_start' and 'feature_end' keys to avoid confusion
+    # remove keys used internally
     for seq_record in seq_records:
+        del seq_record['unexpected_characters_in_sequence']
+        del seq_record['input_type']
         for feature in seq_record['features']:
             del feature['feature_start']
             del feature['feature_end']
