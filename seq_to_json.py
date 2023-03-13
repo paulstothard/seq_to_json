@@ -208,7 +208,7 @@ def get_feature_qualifiers(feature_text):
         for qualifier_text in filter(is_feature_qualifier, re.split(r'(?=^\s*\/)', m.group(1), flags=re.MULTILINE)):
             qualifier = {}
             m = re.search(
-                r'\/(\S+)\s*=\s*\"?([^\"]+)\"?(?=^\s*\/|\s)', qualifier_text, flags=re.DOTALL | re.MULTILINE)
+                r'\/([^\"\s]+)\s*=\s*\"?([^\"]*)\"?(?=^\s*\/|$)', qualifier_text, flags=re.DOTALL | re.MULTILINE)
             if m:
                 qualifier['feature_name'] = m.group(1)
                 qualifier['feature_value'] = format_feature_qualifier_value(
