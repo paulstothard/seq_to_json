@@ -345,6 +345,12 @@ def get_proportion_nucleotide_in_string(sequence):
     return sum(map(lambda x: sequence.upper().count(x), char)) / len(sequence)
 
 
+def get_proportion_aa_in_string(sequence):
+    char = ['A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M',
+            'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'Y', '-', '.']
+    return sum(map(lambda x: sequence.upper().count(x), char)) / len(sequence)
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         prog='seq_to_json.py', description='Converts a raw, FASTA, GenBank, or EMBL file to an easy-to-parse JSON file.', epilog='python seq_to_json.py input')
@@ -371,8 +377,12 @@ if __name__ == "__main__":
     # try to determine whether the sequence in each record is DNA or protein
     for seq_record in seq_records:
         if seq_record['sequence']:
-            seq_record['type'] = 'dna' if get_proportion_nucleotide_in_string(
-                seq_record['sequence']) > 0.9 else 'protein'
+            if get_proportion_nucleotide_in_string(seq_record['sequence']) > 0.9:
+                seq_record['type'] = 'dna'
+            elif get_proportion_aa_in_string(seq_record['sequence']) > 0.9:
+                seq_record['type'] = 'protein'
+            else:
+                seq_record['type'] = 'unknown'
 
     if args.sequence:
         add_feature_sequences(seq_records)
