@@ -386,9 +386,9 @@ def get_count_common_aa_in_string(sequence):
     return sum(map(lambda x: sequence.upper().count(x), char))
 
 
-def exit_if_false(boolean, message):
+def exit_if_false(boolean, *args):
     if not boolean:
-        eprint_exit(message)
+        eprint_exit(*args)
 
 
 if __name__ == "__main__":
@@ -444,61 +444,61 @@ if __name__ == "__main__":
 
     # run various sanity checks on the results
     for seq_record in seq_records:
-        exit_if_false(seq_record['length'] or seq_record['sequence'], "Sequence length and sequence are both missing for sequence: '" +
-                      seq_record['name'] + "'.")
+        exit_if_false(seq_record['length'] or seq_record['sequence'], "Sequence length and sequence are both missing for sequence: '",
+                      seq_record['name'], "'.")
         if not seq_record['length'] and seq_record['sequence']:
             seq_record['length'] = len(seq_record['sequence'])
         if seq_record['length'] and seq_record['sequence']:
-            exit_if_false(int(seq_record['length']) == len(seq_record['sequence']), "Reported sequence length " + str(seq_record['length']) +
-                          "does not match actual sequence length " +
-                          str(len(seq_record['sequence'])) +
-                          " for sequence: '" + seq_record['name'] + "'.")
+            exit_if_false(int(seq_record['length']) == len(seq_record['sequence']), "Reported sequence length ", seq_record['length'],
+                          "does not match actual sequence length ",
+                          len(seq_record['sequence']),
+                          " for sequence: '", seq_record['name'], "'.")
         if seq_record['sequence']:
-            exit_if_false(seq_record['type'] == 'dna' or seq_record['type'] == 'protein', "Sequence type is not DNA or protein for sequence: '" +
-                          str(seq_record['name']) + "'.")
-            exit_if_false(not seq_record['unexpected_characters_in_sequence'], "Unexpected characters in sequence for sequence: '" +
-                          str(seq_record['name']) + "'.")
+            exit_if_false(seq_record['type'] == 'dna' or seq_record['type'] == 'protein', "Sequence type is not DNA or protein for sequence: '",
+                          seq_record['name'], "'.")
+            exit_if_false(not seq_record['unexpected_characters_in_sequence'], "Unexpected characters in sequence for sequence: '",
+                          seq_record['name'], "'.")
         for feature in seq_record['features']:
             if feature['feature_start'] and feature['feature_end']:
-                exit_if_false(int(feature['feature_end']) >= int(feature['feature_start']), "Feature end " + str(feature['feature_end']) + " is less than feature start " +
-                              str(feature['feature_start']) + " for feature: " +
-                              str(feature['feature_name']) + " in sequence: " +
-                              str(seq_record['name']) + ".")
+                exit_if_false(int(feature['feature_end']) >= int(feature['feature_start']), "Feature end ", feature['feature_end'], " is less than feature start ",
+                              feature['feature_start'], " for feature: ",
+                              feature['feature_name'], " in sequence: ",
+                              seq_record['name'], ".")
             if feature['feature_start'] and seq_record['length']:
-                exit_if_false(int(feature['feature_start']) <= int(seq_record['length']), "Feature start " + str(feature['feature_start']) + " is greater than sequence length " +
-                              str(seq_record['length']) + " for feature: " + str(feature['feature_name']) +
-                              " in sequence: '" + str(seq_record['name']) + "'.")
+                exit_if_false(int(feature['feature_start']) <= int(seq_record['length']), "Feature start ", feature['feature_start'], " is greater than sequence length ",
+                              seq_record['length'], " for feature: ", feature['feature_name'],
+                              " in sequence: '", seq_record['name'], "'.")
             if feature['feature_end'] and seq_record['length']:
-                exit_if_false(int(feature['feature_end']) <= int(seq_record['length']), "Feature end " + str(feature['feature_end']) + " is greater than sequence length " +
-                              str(seq_record['length']) + " for feature: " + str(feature['feature_name']) +
-                              " in sequence: '" + str(seq_record['name']) + "'.")
+                exit_if_false(int(feature['feature_end']) <= int(seq_record['length']), "Feature end ", feature['feature_end'], " is greater than sequence length ",
+                              seq_record['length'], " for feature: ", feature['feature_name'],
+                              " in sequence: '", seq_record['name'], "'.")
             if feature['feature_sequence'] and seq_record['length']:
-                exit_if_false(len(feature['feature_sequence']) <= int(seq_record['length']), "Feature sequence " + str(feature['feature_sequence']) +
-                              " is greater than sequence length " +
-                              str(seq_record['length']) + " for feature: " + str(feature['feature_name']) +
-                              " in sequence: '" + str(seq_record['name']) + "'.")
+                exit_if_false(len(feature['feature_sequence']) <= int(seq_record['length']), "Feature sequence ", feature['feature_sequence'],
+                              " is greater than sequence length ",
+                              seq_record['length'], " for feature: ", feature['feature_name'],
+                              " in sequence: '", seq_record['name'], "'.")
             if feature['feature_sequence']:
                 expected_length = sum(map(lambda dict: int(dict['feature_range_end']) - int(
                     dict['feature_range_start']) + 1, feature['feature_locations']))
-                exit_if_false(len(feature['feature_sequence']) == expected_length, "Feature sequence " + str(feature['feature_sequence']) + " is not the expected length " + str(
-                    expected_length) + " for feature: " + str(feature['feature_name']) + " in sequence: '" + str(seq_record['name']) + "'.")
+                exit_if_false(len(feature['feature_sequence']) == expected_length, "Feature sequence ", feature['feature_sequence'], " is not the expected length ", str(
+                    expected_length), " for feature: ", feature['feature_name'], " in sequence: '", seq_record['name'], "'.")
             for locations in feature['feature_locations']:
                 if locations['feature_range_start'] and locations['feature_range_end']:
-                    exit_if_false(int(locations['feature_range_end']) >= int(locations['feature_range_start']), "Feature range end " + str(locations['feature_range_end']) +
-                                  " is less than feature range start " +
-                                  str(locations['feature_range_start']) + " for feature: " +
-                                  str(feature['feature_name']) + " in sequence: " +
-                                  str(seq_record['name']) + ".")
+                    exit_if_false(int(locations['feature_range_end']) >= int(locations['feature_range_start']), "Feature range end ", locations['feature_range_end'],
+                                  " is less than feature range start ",
+                                  locations['feature_range_start'], " for feature: ",
+                                  feature['feature_name'], " in sequence: ",
+                                  seq_record['name'], ".")
                 if locations['feature_range_start'] and seq_record['length']:
-                    exit_if_false(int(locations['feature_range_start']) <= int(seq_record['length']), "Feature range start " + str(locations['feature_range_start']) +
-                                  " is greater than sequence length " +
-                                  str(seq_record['length']) + " for feature: " + str(feature['feature_name']) +
-                                  " in sequence: '" + str(seq_record['name']) + "'.")
+                    exit_if_false(int(locations['feature_range_start']) <= int(seq_record['length']), "Feature range start ", locations['feature_range_start'],
+                                  " is greater than sequence length ",
+                                  seq_record['length'], " for feature: ", feature['feature_name'],
+                                  " in sequence: '", seq_record['name'], "'.")
                 if locations['feature_range_end'] and seq_record['length']:
-                    exit_if_false(int(locations['feature_range_end']) <= int(seq_record['length']), "Feature range end " + str(locations['feature_range_end']) +
-                                  " is greater than sequence length " +
-                                  str(seq_record['length']) + " for feature: " + str(feature['feature_name']) +
-                                  " in sequence: '" + str(seq_record['name']) + "'.")
+                    exit_if_false(int(locations['feature_range_end']) <= int(seq_record['length']), "Feature range end ", locations['feature_range_end'],
+                                  " is greater than sequence length ",
+                                  seq_record['length'], " for feature: ", feature['feature_name'],
+                                  " in sequence: '", seq_record['name'], "'.")
 
     # remove keys used internally
     for seq_record in seq_records:
