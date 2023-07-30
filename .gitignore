@@ -1,6 +1,11 @@
 deploy
 .DS_Store
+.vscode/*
+.history/
+*.vsix
+*.code-workspace
 test_output
 test_local.sh
 test_input_local
 test_output_local
+sample_output_local

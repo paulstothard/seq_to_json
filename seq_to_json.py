@@ -330,7 +330,9 @@ def get_features(sequence_record_text):
                 feature_string)
             feature['feature_qualifiers'] = get_feature_qualifiers(
                 feature_string)
-            features.append(feature)
+            # if feature['feature_name'] is not equal to '' then add the feature to the features array
+            if feature['feature_name']:
+                features.append(feature)
     return features
 
 
@@ -502,7 +504,14 @@ if __name__ == "__main__":
 
     # remove keys used internally
     for seq_record in seq_records:
-        del seq_record['unexpected_characters_in_sequence']
+        # if a record has no sequence and no features remove it
+        if not seq_record['sequence'] and not seq_record['features']:
+            seq_records.remove(seq_record)
+            continue
+        
+        # if the key 'unexpected_characters_in_sequence' is present, then remove it
+        if 'unexpected_characters_in_sequence' in seq_record:
+            del seq_record['unexpected_characters_in_sequence']
         del seq_record['input_type']
         for feature in seq_record['features']:
             del feature['feature_start']
