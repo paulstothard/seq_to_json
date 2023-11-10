@@ -1,15 +1,15 @@
 # seq_to_json
-Converts a raw, FASTA, GenBank, or EMBL file to an easy-to-parse JSON file. Feature information is included in the output from GenBank and EMBL files.
+Converts a raw, FASTA, GenBank, or EMBL file to a JSON file. Feature information is included in the output from GenBank and EMBL files.
 
 ## Usage
 
 ```
 usage: seq_to_json.py [-h] [-o OUTPUT] [-s] input
 
-Converts a raw, FASTA, GenBank, or EMBL file to an easy-to-parse JSON file.
+Converts a raw, FASTA, GenBank, or EMBL file to a JSON file.
 
 positional arguments:
-  input                 Raw, FASTA, GenBank, or EMBL file to parse
+  input                 raw, FASTA, GenBank, or EMBL file to parse
 
 options:
   -h, --help            show this help message and exit
