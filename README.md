@@ -1,4 +1,5 @@
 # seq_to_json
+
 Converts a raw, FASTA, GenBank, or EMBL file to a JSON file. Feature information is included in the output from GenBank and EMBL files.
 
 ## Usage
