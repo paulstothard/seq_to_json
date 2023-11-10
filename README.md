@@ -4,7 +4,7 @@ Converts a raw, FASTA, GenBank, or EMBL file to a JSON file. Feature information
 
 ## Usage
 
-```
+```text
 usage: seq_to_json.py [-h] [-o OUTPUT] [-s] input
 
 Converts a raw, FASTA, GenBank, or EMBL file to a JSON file.
