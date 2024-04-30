@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 """
-Converts a raw, FASTA, GenBank, or EMBL file to a JSON file. 
+Converts a raw, FASTA, GenBank, or EMBL file to a JSON file.
 Feature information is included in the output from GenBank and EMBL files.
 
-Usage: 
+Usage:
     python seq_to_json.py input
 
-Author: 
+Author:
     Paul Stothard
 """
 import argparse
