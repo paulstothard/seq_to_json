@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """
 Converts a raw, FASTA, GenBank, or EMBL file to a JSON file.
 Feature information is included in the output from GenBank and EMBL files.
